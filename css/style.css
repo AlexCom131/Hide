@@ -1,0 +1,234 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(17, 17, 17);
+    height: 100%;
+
+    font-family: "Inter";
+    z-index: -5;
+  }
+  
+.page{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+  
+    margin: auto;
+}
+
+.wrapper{
+  z-index: 0;
+}
+
+main{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.textShow{
+  display: none;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 96.5px 38px 47px 107px 34px 62px 113px 102px 103px;
+    column-gap: 60px;
+    grid-template-rows: 51px;
+    background: rgba(17, 17, 17, 1);
+    border-bottom: 1px solid rgba(35, 35, 35, 1);
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+
+    position: sticky;
+}
+
+.header-name{
+    font-family: "Inter";
+    font-size: 28px;
+    font-weight: 700;
+    width: 60px;
+    letter-spacing: -0.01em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.headerNamePhone{
+  display: none;
+
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #fff;
+}
+
+.header-menu{
+    color: rgb(163, 160, 160);
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    /* margin-right: 66px; */
+    line-height: 19.36px;
+    text-align: center;
+
+}
+
+/* .header-language{
+    padding-top: 15.5px;
+    margin-left: 90px;
+    margin-top: 4px;
+} */
+
+.dropMenu{
+  display: none;
+}
+
+.burger{
+  /* justify-self: end; */
+  z-index: 7;
+} 
+
+.mittel{
+  position: absolute;
+  display: grid;
+  width: 100%;
+  height: 1000px;
+  grid-template-columns: 200px;
+
+   grid-template-rows: 32px 32px 32px 32px 32px 32px;
+ 
+  row-gap: 16px;
+  
+  padding: 40px;
+  display: none;
+  left: 0;
+  background: #111;
+  padding-top: 61px;
+  /* margin-top: 425px; */
+  margin-top: 950px;
+  z-index: 6; 
+}
+
+.mittel.show{ 
+  
+  display: grid;
+}
+
+.header-menu-butter{
+  font-weight: 600;
+  font-size: 26px;
+  white-space: nowrap;  
+
+  letter-spacing: 0.01em;
+  color: #fff;
+  text-decoration: none;
+
+  /* padding-top: 16px; */
+}
+
+.language{
+    display: flex;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    align-items: center;
+    justify-self: end;
+    /* margin-left: 9px; */
+}
+
+.vector{
+    margin-bottom: 1px;
+    margin-left: 10px;
+}
+
+
+
+footer{
+    color: rgb(255, 255, 255);
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+
+    background-color: rgba(17, 17, 17, 1);
+    bottom: 0px;
+    padding-top: 25.5px;
+    padding-bottom: 24px;
+    line-height: 29px;
+    border-top: 1px solid rgba(35, 35, 35, 1);
+    z-index: 3;
+
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+/* @media (max-width: 768px) {
+  .page{
+    max-width: 100%;
+  }
+} */
+
+.horizontal-scroll-container {
+  overflow-x: auto; 
+  white-space: nowrap; 
+  width: 100%; 
+
+  scrollbar-width: none;
+}
+
+.horizontal-scroll-container img {
+  display: inline-block; 
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.horizontal-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+
+@media (max-width:570px) {
+
+  .textHidden{
+    display: none;
+  }
+
+  .textShow{
+    display:contents;
+  }
+  
+}
+
+@media (max-width:1210px) {
+  header{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content:space-between;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .header-name{
+    display: none;
+  }
+
+  .headerNamePhone{
+    display:contents;
+  }
+
+  .header-menu{
+    display: none;
+  }
+
+  .language{
+    display: none;
+  }
+
+  .dropMenu{
+    display:contents;
+  }
+}

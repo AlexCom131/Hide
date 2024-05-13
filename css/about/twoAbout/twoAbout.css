@@ -1,0 +1,149 @@
+.row.justify-content-end {
+    display: flex;
+
+    align-items: center;
+}
+
+.twoAbout{
+    width: 100%;
+    margin-top: 174px;
+    padding-top: 99px;
+
+    padding-bottom: 83px;
+
+    background: #1e1e1e;
+}
+
+.twoAboutText1{
+    font-weight: 700;
+    font-size: 48px;
+    text-transform: capitalize;
+    text-align: center;
+    
+    color: #fff;
+}
+
+.twoAboutText2{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #6c7275;
+
+    margin-top: 24px;
+
+    margin-bottom: 64px;
+}
+
+.mrTop{
+    margin-top: 16px;
+}
+
+.twoAboutText3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 129%;
+    color: #fff;
+}
+
+.twoAboutText4{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #6c7275;
+}
+
+.gridContainerIco{
+    display: grid;
+    grid-template-columns: 48px 439px;
+    grid-template-rows: 31px auto;
+    row-gap: 12px;
+    column-gap: 30px;
+    margin-bottom: 44px;
+}
+
+.imgIco{
+    width:48px;
+    height:48px;
+}
+.twoAboutText3{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 129%;
+    color: #fff;
+}
+
+.twoAboutText4{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #6c7275;
+
+    grid-column: 2;
+}
+
+.twoAboutIco{
+    width: auto;
+    height: 428px;
+    margin-left: auto;
+}
+
+@media (max-width:570px) {
+
+    .twoAbout{
+        margin-top: 50px;
+        padding-top: 50px;
+
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+
+}
+
+    .twoAboutText1{
+        font-size: 29px;
+
+        white-space: nowrap;
+    }
+
+    .twoAboutText2{
+        font-size: 17px;
+
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+
+    .gridContainerIco{
+        grid-template-columns: 40px 283px;
+        grid-template-rows: 20px auto;
+        row-gap: 0px;
+        column-gap: 12px;
+
+        margin-bottom: 30px;
+    }
+
+    .mrTop{
+        margin-top: 24px;
+    }
+
+    .twoAboutText3{
+        font-weight: 600;
+        font-size: 15px;
+    }
+    
+    .twoAboutText4{
+        font-weight: 400;
+        font-size: 15px;
+    }
+    .twoAboutIco{
+        width: 100%;
+        height: auto;
+    }
+
+    .imgIco{
+        width:40px; 
+        height:40px;
+    }
+}

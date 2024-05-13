@@ -1,0 +1,312 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1207px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.introBlog{
+    position: relative;
+}
+
+.positionEnd{
+    display: grid;
+    justify-content: end;
+}
+
+.introBlogText{
+    font-weight: 700;
+    font-size: 54px;
+    color: #fff;
+
+    /* grid-column: 1/3; */
+
+    margin-top: 42px;
+    height: 65px;
+}
+
+.svgBild{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    left: 0;
+    right: 0;
+    /* width:1440px; 
+    height:574px; */
+    
+    /* top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+
+    */
+    margin-top: 412px; 
+    z-index: 0;
+}
+
+.previewBox{
+    border-radius: 30px;
+    width: 589.49px;
+    height: 409px;
+    background: #232627;
+
+    margin-top: 50px;
+
+    /* margin-right: 40px; */
+}
+
+.introBlogContainer{
+    margin-top: 40px;
+}
+
+
+.contentBlog{
+    display: grid;
+    grid-template-columns: 546px;
+
+    margin-top: 90px;
+    align-items: center;
+    align-self: start;
+}
+
+.nameBlogTextMain{
+    font-weight: 700;
+    font-size: 24px;
+   
+    color: #fff;
+
+    margin-top: 247px;
+}
+
+.descriptionBlogText{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+    width: 546px;
+
+    margin-top: 11.84px;
+}
+
+.blogContainer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 20px;
+}
+
+.contentAutor{
+    margin-top: 9px;
+    display: grid;
+    justify-self: start;
+}
+
+.ongoingBlog{
+    width: 379px;
+    margin-top: 40px;
+
+    align-items: center;
+}
+
+.ongoingBlogPhone{
+    width: 343px;
+    
+}
+
+.ongoingBox{
+    width: 379px; 
+    height: 273.56px; 
+    background: #232627; 
+    border-radius: 20px;
+}
+
+.autorContainer{
+    margin-top: 29px;
+}
+
+.paddiingNull{
+    padding-right: 0px;
+}
+
+.autorContainerPhone{
+    margin-top: 23px;
+}
+
+.contentAutorBigText{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #fff;
+
+    padding-right: 5.3px;
+}
+
+.contentAutorSmallText{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #fff;
+}
+
+.contentAutorPhone{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    margin-top: 13px;
+}
+
+.blogText{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff;
+
+    width: 378px;
+
+    margin-top: 18px;
+}
+
+.blogLineal{
+    border: 1px solid #232323;
+
+
+    margin-top: 24px;
+}
+
+.blogName{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 172%;
+    color: #fff; 
+}
+
+.blogTitelPhone{
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+    width: 182px; 
+ 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+
+.userBlog{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: -0.02em;
+    color: #6c7275;
+}
+
+.textPost{
+
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+
+    margin-top: 170.32px;
+}
+
+.lpText{
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+
+    margin-top: 170px;
+}
+
+.marginTop{
+    margin-top: 40px;
+}
+
+.lsOngoingsText1{
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+
+    margin-top: 170px;
+}
+
+.blog{
+    margin-top: 40px;
+}
+
+.buttonMoreContainer{
+    display: grid;
+    justify-content: center;
+
+    margin-bottom: 100px;
+}
+
+.buttonMore{
+    border-radius: 50px;
+    border: 1px solid #fefefe89;
+    width: 202px;
+    height: 48px;
+    background: #567dff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    letter-spacing: -0.03em;
+    color: #fefefe;
+
+    margin-top: 53px;
+    margin-bottom: 100px;
+    }
+
+@media (min-width: 1800px) {
+    .svgBild {
+      display: none; 
+    }
+  }
+
+  @media (max-width:570px) {
+    .introBlogText{
+        font-size: 24px;
+        height: 29px;
+
+        margin-top: 18px;
+    }
+
+    .introBlogContainer{
+        margin-top: 0px;
+    }
+
+    .paddiingNull{
+        padding-right: 12px;
+    }
+
+    .lpText{
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+
+        margin-top: 24px;
+    }
+
+    .lsOngoingsText1{
+        margin-top: 24px;
+
+        font-size: 24px;
+    }
+
+    .blog{
+        margin-top: 10px;
+    }
+
+    .blogName{
+        width: 180px;
+    }
+
+    .marginTop{
+        margin-top: 0px;
+    }
+  }

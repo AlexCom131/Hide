@@ -1,0 +1,132 @@
+.wallpaper1{
+    max-height: 100vh;
+}
+
+.formContainer{
+    display: grid;
+    grid-template-columns: 1176px;
+
+    width: 1176px;
+    border: 1px solid #343839;
+    border-top: none;
+    border-radius: 24px;
+
+    margin: auto;
+}
+
+.title{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1100px;
+    column-gap: 24px;
+    row-gap: 42px;
+
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 155%;
+    color: #fff;
+
+    background: #262723;
+    border: 1px solid #343839;
+    border-bottom:none ;
+    border-radius: 24px 24px 0px 0px;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 305px 745px;
+    column-gap: 42px;
+
+    align-items: start;
+}
+
+.partFormOne{
+    display: grid;
+    grid-template-columns: 305px;
+    row-gap: 40px;
+}
+
+.formText1{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #979797;
+}
+
+.formText2{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #fff;
+}
+
+.formLineal{
+    border: 1px solid #343839;
+    width: 305px;
+    height: 0px;
+}
+
+.partTwoForm{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 40px;
+}
+
+.formContainerImput{
+    display: grid;
+    grid-template-columns: 365.68px 365.68px;
+    column-gap: 13.64px;
+    row-gap: 16px;
+}
+
+.imputText1{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 36px;
+    color: #fff;
+
+    margin-bottom: 10px;
+}
+
+.imputText2{
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 160%;
+    color: #6c7275;
+}
+
+.formInput{
+    background: rgba(17, 17, 17, 1);
+    border: 1px solid #343839;
+    border-radius: 50px;
+    height: 48px;
+
+    font-family: "Inter";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 178%;
+    color: #979797;
+    word-wrap: break-word;
+    white-space: normal;
+    resize: none;
+}
+
+.formButton{
+    background: rgba(17, 17, 17, 1);
+    border: 1px solid #343839;
+    border-radius: 50px;
+    padding: 8px 32px;
+    width: 192px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 178%;
+    letter-spacing: -0.03em;
+    color: #567dff;
+}

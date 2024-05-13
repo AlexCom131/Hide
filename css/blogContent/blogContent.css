@@ -1,0 +1,270 @@
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    max-width: 1207px;
+}
+
+.background {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .blogContainer{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .blur{
+    position: absolute;
+    width: 100%;
+    height: 512px;
+    background: linear-gradient(to top, rgba(20, 23, 24, 0) 0%, #111 100%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+.blurColor{
+    width: 380px;
+    height: 512px;
+    background: linear-gradient(to top, rgba(20, 23, 24, 0) 0%, rgba(56, 139, 234, 0.233) 100%);
+    top: 0px;
+    grid-column: 1/4;
+    z-index: -1;
+}
+
+.margin66{
+    margin-top: 66px;
+}
+
+.backgroundPicture{
+    display: none;
+    width: 200px;
+    height: auto;
+
+    background-image: url("../img/pictur/Group 48095419.png");
+    background-size: cover;
+    z-index: 5;
+}
+
+.dataText{
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+
+    margin-top: 10px;
+}
+
+.blogNameText{
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 104%;
+    color: #fefefe;
+
+    padding-top: 18px;
+}
+
+.userBox{
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    background: #d9d9d9;
+}
+
+.userNameText{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+
+.statusText{
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+
+.bluButton{
+    border: 1px solid rgba(152, 176, 255, 1);
+    border-radius: 50px;
+    width: 77px;
+    height: 36px;
+
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: -0.03em;
+    color: #fefefe;
+
+    margin-top: 40px;
+
+    background: rgba(86, 125, 255, 1);
+}
+
+.shSocialText{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    color: #fff;
+
+    margin-top: 40px;
+}
+
+.socialBox{
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    background: #d9d9d9;
+}
+
+.subtitleText{
+    font-weight: 600;
+    font-size: 20px;
+    color: #fff;
+
+    margin-top: 40px;
+}
+
+.blogContentText{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #eee;
+
+    margin-top: 22px;
+}
+
+.blogContentTextIntro{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 160%;
+    color: #eee;
+
+    margin-top: 71px;
+}
+
+.imgContainer{
+    max-width: 570px;; 
+    height: 618px; 
+    overflow: hidden;
+    
+}
+
+.imgBoxIntro{
+    border-radius: 24px;
+    /* height: 618px; */
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.imgBox{
+    border-radius: 24px;
+
+    margin-top: 40px;
+}
+
+@media (max-width:570px) {
+
+    .backgroundPicture{
+        display:contents;
+    }
+    
+    .dataTextBack{
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 133%;
+        letter-spacing: -0.02em;
+        color: #fff;
+        opacity: 0.7;
+    }
+    .dataText{
+        display: none;
+    }
+
+    .margin66{
+        margin-top: 16px;
+    }
+    .blogNameText{
+        display: none;
+    }
+
+    .blogNameTextBack{
+        margin-top: 73px; 
+
+        font-weight: 700;
+        font-size: 24px;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+    }
+
+    .socialBox{
+        margin-bottom: 0;
+    }
+    .blur{
+        display: none;
+    }
+
+    .imgContainer{
+        position: absolute;
+        display:flex;
+        
+        width:100%;
+        height: 203px;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 0;
+
+        display: flex;
+        align-items: center;
+        
+        overflow: hidden;
+
+    }
+
+    .imgBoxIntro{
+        position: absolute;
+        border-radius: 0%; 
+        height: auto;
+        padding-bottom: 110px;
+        
+    }
+
+    .subtitleText{
+        margin-top: 20px;
+    }
+
+    .blogContentText{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        color: #fff;
+    }
+
+    .blogContentTextIntro{
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 129%;
+        letter-spacing: -0.02em;
+        color: #fff;
+
+        margin-top: 30px;
+    }
+
+    .bluButton{
+        margin-top: 23px;
+    }
+
+    .shSocialText{
+        margin-top: 30px;
+    }   
+}
+
+@media (width:770px) {
+    .imgContainer{
+        display: none;
+    }
+
+}

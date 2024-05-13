@@ -1,0 +1,323 @@
+.inroContainerSquad{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+
+    overflow: hidden;
+}
+.squar{
+    position: absolute;
+    stroke: rgb(255, 255, 255);
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    width: 694px;
+    height: 694px;  
+    margin-top: 500px;
+    z-index: -2;
+    gap: 7.23px;
+    opacity: 0.28;
+    /* opacity: 0.5; */
+}
+
+.elips{
+    position: absolute;
+    /* background: radial-gradient(circle, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%); */
+
+
+
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%); 
+    /* background: radial-gradient(ellipse at center, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
+  
+
+
+
+    filter: blur(216.875px);
+    /* 150 */
+    width: 1382.22px;
+    height: 1382.22px;
+    margin-top:445.11px;
+    z-index: -1;
+}
+
+.introContainerText{
+    display: grid;
+    justify-content: center; 
+    align-items: center;
+}
+
+.text1{
+    font-family: "Inter";
+    font-size: 64px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: rgba(254, 254, 254, 1);
+    margin-top: 108px;
+    line-height: 112%;
+}
+
+.text2{
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: rgba(108, 114, 117, 1);
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.smsContainer{
+    display: grid;
+    width: 810px; 
+    grid-column: max(auto);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+
+    top: 164px;
+}
+
+.pSquar{
+    width: 58px;
+    height: 28px;
+    gap: 10px;
+    border-radius: 12px 12px 2px 12px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(142, 85, 234, 1);
+    border: 1px solid rgba(255, 255, 255, 0.222);
+    position: relative;
+
+    gap: 0px;
+    opacity: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: left;
+    color: rgba(254, 254, 254, 1);
+    letter-spacing: -0.01em;
+    
+    display: grid; 
+    place-items: center;
+}
+
+.gSquar{
+    width:137px;
+    height: 28px;
+    gap: 10px;
+    border-radius: 12px 12px 12px 2px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(63, 221, 120, 1);
+    border: 2px solid rgba(197, 197, 197, 0.5);
+    position: relative;
+    bottom: 20px;
+    left: 75px;
+
+    gap: 0px;
+    opacity: 0px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    letter-spacing: -0.01em;
+
+    justify-self: end;
+    display: grid; 
+    place-items: center;
+}
+
+.introButton{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center; 
+   
+}
+
+.gStarted{
+    gap: 0px;
+    border-radius: 50px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: rgba(86, 125, 255, 1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #ffffff;
+
+    display: grid; 
+    place-items: center;
+}
+
+.gStartedIntro{
+    width: 158px;
+    height: 48px;
+}
+
+.wDemo{
+    gap: 0px;
+    border-radius: 50px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #ffffff;
+    background: rgba(255, 255, 255, 0);
+
+    gap: 0px;
+    opacity: 0px;
+    font-family: "Inter";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #ffffff;
+
+    display: grid; 
+    place-items: center;
+    white-space: nowrap;
+}
+
+.wDemoIntro{
+    width: 183px;
+    height: 48px;
+}
+
+.introContainerClients{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 32px;
+    justify-content: center; 
+    justify-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 168px;
+}
+
+.clients{
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.03em;
+    text-align: end;
+    color: rgb(255, 255, 255);
+    font-family: "Inter";
+}
+
+.clientsLogo {
+    /* display: grid;
+    grid-template-columns: repeat(6, auto);
+    gap: 40px; */
+    display: flex;
+    padding-right: 48px;
+    width: 300%;
+    align-items: center;
+    overflow: hidden; 
+    animation: moveRight 40s linear infinite;
+}
+
+.clientsLogo span{
+   
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+
+.clientsLogo img{
+    width: 70%;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-50%); 
+    }
+}
+
+@media (max-width:570px) {
+
+    .smsContainer{
+        width: 343px; 
+        grid-column: max(auto);
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    
+        top: 50px;
+    }
+
+    .gSquar{
+        top:12px;
+        left: 0px;
+    }
+    .squar{
+        margin-top: 170px;
+        margin-left: 37px;
+    }
+
+    .elips{
+        margin-top:9px;
+    }
+    .text1{
+        min-height:34px;
+        font-size: 30px;
+        margin-top: 66px;
+    }
+    
+    .text2{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .gStartedIntro{
+        width: 100px;
+        height: 37px;
+
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 246%;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+    }
+
+    .wDemoIntro{
+        width: 108px;
+        height: 37px;
+
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 246%;
+        letter-spacing: -0.03em;
+        color: #fefefe;
+    }
+
+    .introContainerClients{
+    margin-top: 70px;
+    }
+
+    .clientsLogo{
+        width: 1000%;
+    }
+
+    .squar{
+        /* height: 600px;
+        margin-top: 410px; */
+        height: 590px;
+        margin-bottom: 109px;
+    }
+}
