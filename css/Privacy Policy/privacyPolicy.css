@@ -44,10 +44,12 @@
     height: auto;
     width: 250px;
   }
+
   .sidebar-nav {
     border-radius: 4px;
     border-left: 4px solid rgba(86, 125, 255, 1); 
   }
+
   .sidebar-nav .nav-link {
     padding: .25rem 1rem;
     color: #938c8c;
@@ -56,7 +58,43 @@
     line-height: 137%;
     
   }
+
   .sidebar-nav .nav-link.active {
     font-weight: bold; 
     color: #fff;
+  }
+
+  @media (max-width:770px) {
+
+    .legalTextMain{
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    .legalTextContent{
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 129%;
+    }
+
+    .legal{
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 127%;
+
+      padding-bottom: 22px;
+    }
+
+    .sidebar{
+      top: 60px;
+    }
+
+    .sidebar-nav .nav-link {
+      font-weight: 600;
+    }
+
+    .content{
+      margin-top: 220px;
+    }
+    
   }
