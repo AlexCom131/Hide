@@ -23,10 +23,11 @@
 .elips{
     position: absolute;
     /* background: radial-gradient(circle, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%); */
+    background: radial-gradient(circle, rgba(22, 22, 24, 0.434) 5%, rgb(17, 17, 17) 30%);
 
 
 
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%); 
+    /* background: -webkit-radial-gradient(center, ellipse cover, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
     /* background: radial-gradient(ellipse at center, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
   
 

@@ -110,7 +110,7 @@
 .blur{
     position: absolute;
     width: 1180px;
-    height: 348px;
+    height: 355px;
     background: linear-gradient(180deg, rgba(20, 23, 24, 0) 0%, #111 100%);
     bottom: 0px;
     grid-column: 1/4;
@@ -127,8 +127,11 @@
         justify-content: center;
         font-size: 24px;
         width: 343px;
-        text-align: start;
-        margin: 0;
+        text-align: center;
+
+
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .displayNone{
@@ -146,6 +149,10 @@
     .textReview{
         width: 292px;
         margin: 25px;
+    }
+
+    .blur{
+        height: 135px;
     }
 
 }

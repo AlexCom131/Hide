@@ -124,6 +124,10 @@ a {
     margin-top: 29px;
 }
 
+.paddiingLeft{
+    padding-left: 10px;
+}
+
 .paddiingNull{
     padding-right: 0px;
 }
