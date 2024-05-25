@@ -5,6 +5,7 @@
 
 .introAbout{
     margin-top: 100px;
+    margin-bottom: 174px;
 }
 
 .introAboutText1{
@@ -25,15 +26,6 @@
     margin-top: 30px;
 
     text-align: center;
-}
-
-.aboutContent{
-    /* grid-row: 4;
-    display: grid;
-    grid-template-columns: 550px;
-    row-gap: 24px; */
-
-    /* margin-right: 108px; */
 }
 
 .introAboutContainer{
@@ -78,6 +70,7 @@
     display: grid; 
     place-items: center;
 
+    white-space: nowrap;
     margin-top: 24px;
 }
 
@@ -96,7 +89,7 @@
     padding-top: 7px;
     grid-row: 1;
 
-    width: 156px; 
+    width: auto; 
     height: 188px;
 }
 
@@ -104,7 +97,7 @@
     grid-column: 1;
     grid-row: 2;
 
-    width:156px; 
+    width: auto; 
     height:185px;
 }
 
@@ -112,24 +105,28 @@
     grid-column: 2;
     grid-row: 1/3;
 
-    width:272px; height:345px;
+    width: auto;  
+    height:345px;
 }
 
 .Foto4{
     grid-column: 1/2;
     grid-row: 1/3;
     position: absolute;
-    margin-top: 54px;
     margin-left: 165px;
     z-index: 1;
+    bottom: 0;
 
-    width:346px; height:364px;
+    width: auto; 
+    height:364px;
 }
 
 
 @media (max-width:570px) {
     .introAbout{
         margin-top: 38px;
+        margin-bottom: 60px;
+
     }
 
     .introAboutContainer{
@@ -137,8 +134,8 @@
     }
 
     .imagion{
-        grid-template-columns: 89px 155px;
-        column-gap: 59px;
+        grid-template-columns:  37% 50%;
+        column-gap: 39px;
         row-gap: 22px;
 
         justify-content: center;
@@ -148,33 +145,33 @@
     }
 
     .Foto1{
-        width: 89px; 
-        height: 107px;
+        width: 100%; 
+        height: auto;
 
         align-self: end;
     }
     
     .Foto2{
     
-        width: 89px; 
-        height:106px;
+        width: 100%; 
+        height: auto;
 
         align-self: start;
     }
     
     .Foto3{
-        width:155px; 
-        height:197px;
+        width: 100%; 
+        height: auto;
 
         margin-bottom: 25px;
     }
 
     .Foto4{
-        margin-top: 25.5px;
-        margin-left: 95px;
-     
-        width:197px; 
-        height:208px;
+        /* margin-top: 25.5px;
+        margin-left: 95px; */
+        margin-left: 75px;
+        max-width: 240px; 
+        height: auto;
     }
 
     .introAboutText1{

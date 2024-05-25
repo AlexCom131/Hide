@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     text3Elements.forEach(function(text3) {
       text3.addEventListener("click", function() {
         const text4 = this.nextElementSibling;
-
+        this.classList.toggle('active');
         text4.classList.toggle("show");
       });
     });

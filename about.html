@@ -11,6 +11,10 @@
     <link rel='stylesheet' href="css\about\styleAbout.css">
     <link rel='stylesheet' href="css\about\ongoings\ongoings.css">
     <link rel='stylesheet' href="css\about\styleAbout.css">
+    <link rel='stylesheet' href="css/blog/blog.css">
+    <link rel='stylesheet' href="css/main/download/download.css">
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,19 +35,18 @@
                 <a class="header-menu" style="color:#fff;" href="about.html">About</a>
                 <a class="header-menu"href="privpolicy.html">Privacy Policy</a>
                 <a class="header-menu" href="blog.html">Blog</a>
-                <a class="header-menu" href="@">Contact</a>
+                <a class="header-menu" href="question.html">Contact</a>
                 <a class="header-menu" href="@">Tearms Of Use</a>
                 <a class="header-menu"href="@">How It Works</a>
                 <div class="dropMenu">
-                    <div class="burger">
-                        <img src="img\header\phoneM.png" width="16" height="9">
-                    </div>
+                    <div class="burger"></div>
+
                     <div class="mittel">
                         <div><a class="header-menu-butter" href="index.html">Main</a></div>
                         <div><a class="header-menu-butter" style="color: #fff;">About</a></div>
                         <div><a class="header-menu-butter"href="privpolicy.html">Privacy Policy</a></div>
                         <div><a class="header-menu-butter"  href="blog.html">Blog</a></div>
-                        <div><a class="header-menu-butter" href="@">Contact</a></div>
+                        <div><a class="header-menu-butter" href="question.html">Contact</a></div>
                         <div><a class="header-menu-butter" href="@">Tearms Of Use</a></div>
                         <div><a class="header-menu-butter" href="@">How It Works</a></div>
                     </div>
@@ -76,7 +79,7 @@
                         </div>
 
                         <div class="row  introAboutContainer">
-                            <div class="col-lg-6 aboutContent order-1 order-lg-0">
+                            <div class="col-lg-6 col-sm-12 aboutContent order-1 order-lg-0">
                                 <div class="introAboutText3" width="550">Learn About Us And What sets us apart</div>
 
                                 <div class="introAboutText4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla 
@@ -90,7 +93,7 @@
                                 </button>
                             </div>
 
-                            <div class="imagion col-lg-6 col-sm-6  order-0 order-lg-1">
+                            <div class="imagion col-lg-6 col-sm-12 justify-content-center order-0 order-lg-1">
                                     <img src="img\pictur\Blog Image.png" class="Foto1">
                                     <img src="img\pictur\Group 48095419.png" class="Foto2">
                                     <img src="img\pictur\Blog Image1.png" class="Foto3">
@@ -98,9 +101,10 @@
                             </div>
                         </div>
             </div>
-            
 
             <div class="col-12 twoAbout">
+                <div class="background"></div>
+
 
                 <div class="row">
                     <div class="twoAboutText1">
@@ -116,7 +120,7 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 mrTop order-1 order-lg-0">
                         <div class="row">
-                            <div class="col-auto gridContainerIco">
+                            <div class="col-auto col-lg-12 ms-auto mx-auto gridContainerIco">
                                 <img class="imgIco" src="img\about\icon\Frame 1000006005.png">
                                 <div class="twoAboutText3">Easy To Use</div>
                                 <div class="twoAboutText4">Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -125,7 +129,7 @@
                         </div>
             
                         <div class="row">
-                            <div class="col-auto gridContainerIco">
+                            <div class="col-auto col-lg-12 ms-auto mx-auto gridContainerIco">
                                 <img class="imgIco" src="img\about\icon\Frame 1000006005.png">
                                 <div class="twoAboutText3">Easy To Use</div>
                                 <div class="twoAboutText4">Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -134,7 +138,7 @@
                         </div>
     
                         <div class="row">
-                            <div class="col-auto gridContainerIco">
+                            <div class="col-auto col-lg-12 ms-auto mx-auto gridContainerIco">
                                 <img class="imgIco" src="img\about\icon\Frame 1000006005.png">
                                 <div class="twoAboutText3">Easy To Use</div>
                                 <div class="twoAboutText4">Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -144,114 +148,106 @@
     
                     </div>
     
-                    <div class="col-lg-6 twoAboutIco mrButt col-sm-6 order-0 order-lg-1">
+                    <div class="col-lg-6 ms-auto twoAboutIco col-sm-12 mx-auto order-lg-1">
                         <img class="twoAboutIco" src="img\pictur\Rectangle 34624199.png">
                     </div>
                 </div>
-
             </div>
 
-            <div class="col-12 " style="margin-top: 100px;">
+           
 
-                <div class="col-12 ongoingsContainerIntro">
-                    <div class="ongoingsText1">
-                        Latest Ongoings
+            <div class="col-12 " >
+
+                <div class="row ongoingsContainerIntro">
+                    <div class="col-auto lsOngoingsText1 align-self-center" style="margin-top: 50px;">                
+                            Latest Ongoings
+                    </div>  
+                    <div class="col-auto buttonMorePhone ms-auto">
+                        <svg width="8" height="13" viewBox="0 0 8 13" fill="#6c7275" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.37054L1.39309 0L8 6.5L1.39309 13L0 11.6295L5.21383 6.5L0 1.37054Z" fill="#6C7275" />
+                          </svg>
+                    </div>                     
+                </div>
+
+
+                <div class="row justify-content-between ongoingsContainer"> 
+                    
+                    <div class="col-auto blog paddiingNull   d-flex flex-column flex-lg-column">
+           
+                        <div class="introImageOngoing">
+                        </div>
+
+                        <div class="row autorContainer align-items-center order-1 order-sm-0">
+                            <div class="col-auto autorIcon d-none d-sm-block paddiingNull ">                                     
+                            </div>
+
+                            <div class="col-auto contentAutorSmallText paddiingNull">
+                                Oliver Bennett
+                            </div>
+
+                            <div class="col-auto contentAutorBigText dotIcon paddiingNull">
+                            </div>
+
+                            <div class="col-auto contentAutorSmallText d-none d-sm-block paddiingNull">
+                                18 Jan 2022
+                            </div>
+                        </div>
+
+                        <div class="col-12 blogTextOngoing order-0 order-sm-1">
+                            Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog
+                        </div>
+
                     </div>
                     
-                    <div class="ongoingsText2">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla fringilla 
-                        <br>nunc in molestie feugiat. Nunc auctor consectetur elit, 
-                    </div>
-
-                    <div class="readAllBlogs" style="margin-top: 30px;">
-                        Read All Blogs
-                    </div>
-                </div>
-
-                <div class="row justify-content-between" style="margin-top: 60px;">
-                            
-                    <div class="col-auto blog d-none d-sm-block paddiingNull">
-                        <div class="col-auo">
-                            <div style="width: 379px; height: 273.56px; background: #232627; border-radius: 20px;">
-                            </div>
+                    <div class="col-auto blog paddiingNull  d-flex flex-column flex-lg-column">
+           
+                        <div class="introImageOngoing">
                         </div>
-                        <div class="row autorContainer align-items-center">
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 28px; height: 28px; border-radius: 100%; background: #a6a6a6;"></div>                                
+
+                        <div class="row autorContainer align-items-center order-1 order-sm-0">
+                            <div class="col-auto autorIcon d-none d-sm-block paddiingNull ">                                     
                             </div>
 
-                            <div class="col-auto contentAutorSmallText">
+                            <div class="col-auto contentAutorSmallText paddiingNull">
                                 Oliver Bennett
                             </div>
 
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 6px; height: 6px; border-radius: 100%; background: #567dff;"></div>
+                            <div class="col-auto contentAutorBigText dotIcon paddiingNull">
                             </div>
 
-                            <div class="col-auto contentAutorSmallText">
+                            <div class="col-auto contentAutorSmallText d-none d-sm-block paddiingNull">
                                 18 Jan 2022
                             </div>
                         </div>
 
-                        <div class="col-12 blogText">
+                        <div class="col-12 blogTextOngoing order-0 order-sm-1">
                             Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog
                         </div>
 
                     </div>
 
-                    <div class="col-auto blog d-none d-sm-block paddiingNull">
-                        <div class="col-auo">
-                            <div style="width: 379px; height: 273.56px; background: #232627; border-radius: 20px;">
-                            </div>
+                    <div class="col-auto blog paddiingNull  d-flex flex-column flex-lg-column">
+           
+                        <div class="introImageOngoing">
                         </div>
-                        <div class="row autorContainer align-items-center">
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 28px; height: 28px; border-radius: 100%; background: #a6a6a6;"></div>                                
+
+                        <div class="row autorContainer align-items-center order-1 order-sm-0">
+                            <div class="col-auto autorIcon d-none d-sm-block paddiingNull ">                                     
                             </div>
 
-                            <div class="col-auto contentAutorSmallText">
+                            <div class="col-auto contentAutorSmallText paddiingNull">
                                 Oliver Bennett
                             </div>
 
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 6px; height: 6px; border-radius: 100%; background: #567dff;"></div>
+                            <div class="col-auto contentAutorBigText dotIcon paddiingNull">
                             </div>
 
-                            <div class="col-auto contentAutorSmallText">
+                            <div class="col-auto contentAutorSmallText d-none d-sm-block paddiingNull">
                                 18 Jan 2022
                             </div>
                         </div>
 
-                        <div class="col-12 blogText">
-                            Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog
-                        </div>
-
-                    </div>
-
-                    <div class="col-auto blog d-none d-sm-block">
-                        <div class="col-auo">
-                            <div style="width: 379px; height: 273.56px; background: #232627; border-radius: 20px;">
-                            </div>
-                        </div>
-                        <div class="row autorContainer align-items-center">
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 28px; height: 28px; border-radius: 100%; background: #a6a6a6;"></div>                                
-                            </div>
-
-                            <div class="col-auto contentAutorSmallText">
-                                Oliver Bennett
-                            </div>
-
-                            <div class="col-auto contentAutorBigText">
-                                <div style="width: 6px; height: 6px; border-radius: 100%; background: #567dff;"></div>
-                            </div>
-
-                            <div class="col-auto contentAutorSmallText">
-                                18 Jan 2022
-                            </div>
-                        </div>
-
-                        <div class="col-12 blogText">
+                        <div class="col-12 blogTextOngoing order-0 order-sm-1">
                             Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog
                         </div>
 
@@ -259,70 +255,185 @@
                 </div>
             </div>
 
-                <div class="ongoingQuestinContainer">
-                    <div class="ongoingQuestin">
+            <div class="col-12 ongoingQuestinContainer">
+
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
                         <div class="ongoingQuestinText1">Frequently Asked Questions</div>
                         <div class="ongoingQuestinText2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-                            <br>nunc in molestie feugiat. Nunc auctor consectetur elit, </div>
+                            nunc in molestie feugiat. Nunc auctor consectetur elit, </div>
                         <a class="askQuest" href="question.html"> Ask A Question</a>
                     </div>
-
-                    <div class="ongoingOftQuestinContainer">
-                        <div>
-                            <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer hed?
-                                <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+    
+                    <div class="col-md-6 col-sm-12">
+                        <div class="col-sm-12 d-block d-sm-none" style="margin-top: 28px;"></div>
+    
+                            <div>
+                                <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer hed?
+                                    <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+                                </div>
+                                <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+                                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                                </div>
                             </div>
-                            <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+    
+                            <div>
+                                <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
+                                    <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+                                </div>
+                                <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+                                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                                </div>
                             </div>
-                        </div>
-                        <!-- <div><img src="img\about\lineal\Vector 13.png" width="15" height="7"></div> -->
-
-                        <div>
-                            <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
-                                <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+    
+                            <div>
+                                <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
+                                    <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+                                </div>
+                                <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+                                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                                </div> 
                             </div>
-                            <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+    
+                            <div>
+                                <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
+                                    <img src="img\about\lineal\Vector 13.png" width="15" height="7">
+                                </div>
+                                <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
+                                    diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
+                                    aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
+                                </div> 
                             </div>
-                        </div>
-
-                        <div>
-                            <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
-                                <img src="img\about\lineal\Vector 13.png" width="15" height="7">
-                            </div>
-                            <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
-                            </div> 
-                        </div>
-
-                        <div>
-                            <div class="ongoingQuestinText3">Lorem ipsum dolor sit amet, consectetuer?
-                                <img src="img\about\lineal\Vector 13.png" width="15" height="7">
-                            </div>
-                            <div class="ongoingQuestinText4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                                diam nonummy nibh euismod tincidunt ut laoreet dolore magna 
-                                aliquam erat volutpat. Ut wisi enim ad minim veniam, quis 
-                            </div> 
-                        </div>
-
-
                     </div>
-                    <div style="margin-bottom: 100px;"></div>
                 </div>
+
+            </div>
 
                 </div>
 
-                </div>
-            </div>
-            </div>
+                <!-- </div>
+            </div> -->
         <footer>
 
-            <div>
-                WEB Design UI/UX Design Product Design Logo Express-Design <br>© 2024 Hidegram
+            <div class="lineal"></div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="lineal"></div>
+
+                    <div class=" col-12 d-sm-none downSquadContainerFooter">
+                        <svg class="downSquadFooter"> 
+            
+                            <rect x="-0.5" y="0" width="86.75" height="86.75"/>
+                            <rect x="86.75" y="0" width="86.75" height="86.75" />
+                            <rect x="173.5" y="0" width="86.75" height="86.75" />
+                            <rect x="260.25" y="0" width="86.75" height="86.75" />
+                            <rect x="347" y="0" width="86.75" height="86.75" />
+                            <rect x="433.75" y="0" width="86.75" height="86.75" />
+                            <rect x="520.5" y="0" width="86.75" height="86.75" />
+                            <rect x="607.25" y="0" width="86.75" height="86.75" />
+                          
+                            <rect x="-0.2" y="86.75" width="86.75" height="86.75"/>
+                            <rect x="86.75" y="86.75" width="86.75" height="86.75" />
+                            <rect x="173.5" y="86.75" width="86.75" height="86.75"  />
+                            <rect x="260.25" y="86.75" width="86.75" height="86.75" fill="rgba(255, 255, 255,.5)"/>
+                            <rect x="347" y="86.75" width="86.75" height="86.75" />
+                            <rect x="433.75" y="86.75" width="86.75" height="86.75" />
+                            <rect x="520.5" y="86.75" width="86.75" height="86.75" />
+                            <rect x="607.25" y="86.75" width="86.75" height="86.75" />
+                          
+                            <rect x="-0.2" y="173.5" width="86.75" height="86.75"/>
+                            <rect x="86.75" y="173.5" width="86.75" height="86.75" />
+                            <rect x="173.5" y="173.5" width="86.75" height="86.75" />
+                            <rect x="260.25" y="173.5" width="86.75" height="86.75" />
+                            <rect x="347" y="173.5" width="86.75" height="86.75" />
+                            <rect x="433.75" y="173.5" width="86.75" height="86.75" fill="rgba(255, 255, 255, .5)"  />
+                            <rect x="520.5" y="173.5" width="86.75" height="86.75" />
+                            <rect x="607.25" y="173.5" width="86.75" height="86.75" />
+                          
+                            <rect x="-0.2" y="260.25" width="86.75" height="86.75" />
+                            <rect x="86.75" y="260.25" width="86.75" height="86.75"/>
+                            <rect x="173.5" y="260.25" width="86.75" height="86.75"fill="rgba(255, 255, 255, .5)" />
+                            <rect x="260.25" y="260.25" width="86.75" height="86.75"/>
+                            <rect x="347" y="260.25" width="86.75" height="86.75" />
+                            <rect x="433.75" y="260.25" width="86.75" height="86.75" />
+                            <rect x="520.5" y="260.25" width="86.75" height="86.75" />
+                            <rect x="607.25" y="260.25" width="86.75" height="86.75" />
+                        
+                            <rect x="-0.2" y="347" width="86.75" height="86.75" />
+                            <rect x="86.75" y="347" width="86.75" height="86.75"/>
+                            <rect x="173.5" y="347" width="86.75" height="86.75" />
+                            <rect x="260.25" y="347" width="86.75" height="86.75" />
+                            <rect x="347" y="347" width="86.75" height="86.75" />
+                            <rect x="433.75" y="347" width="86.75" height="86.75" />
+                            <rect x="520.5" y="347" width="86.75" height="86.75"/>
+                            <rect x="607.25" y="347" width="86.75" height="86.75" />
+                        
+                        
+                            <rect x="-0.2" y="433.75" width="86.75" height="86.75" />
+                            <rect x="86.75" y="433.75" width="86.75" height="86.75" />
+                            <rect x="173.5" y="433.75" width="86.75" height="86.75" fill="rgba(255, 255, 255, .5) "/>
+                            <rect x="260.25" y="433.75" width="86.75" height="86.75" />
+                            <rect x="347" y="433.75" width="86.75" height="86.75"/>
+                            <rect x="433.75" y="433.75" width="86.75" height="86.75" fill="rgba(255, 255, 255, .5) "/>
+                            <rect x="520.5" y="433.75" width="86.75" height="86.75" />
+                            <rect x="607.25" y="433.75" width="86.75" height="86.75" />
+                        
+                        
+                        
+                            <rect x="-0.2" y="520.5" width="86.75" height="86.75" />
+                            <rect x="86.75" y="520.5" width="86.75" height="86.75" />
+                            <rect x="173.5" y="520.5" width="86.75" height="86.75" />
+                            <rect x="260.25" y="520.5" width="86.75" height="86.75"/>
+                            <rect x="347" y="520.5" width="86.75" height="86.75" />
+                            <rect x="433.75" y="520.5" width="86.75" height="86.75" />
+                            <rect x="520.5" y="520.5" width="86.75" height="86.75" />
+                            <rect x="607.25" y="520.5" width="86.75" height="86.75" />
+                        
+                        
+                            <rect x="-0.2" y="607.25" width="86.75" height="86.75" />
+                            <rect x="86.75" y="607.25" width="86.75" height="86.75" />
+                            <rect x="173.5" y="607.25" width="86.75" height="86.75" />
+                            <rect x="260.25" y="607.25" width="86.75" height="86.75" />
+                            <rect x="347" y="607.25" width="86.75" height="86.75" />
+                            <rect x="433.75" y="607.25" width="86.75" height="86.75" />
+                            <rect x="520.5" y="607.25" width="86.75" height="86.75" />
+                            <rect x="607.25" y="607.25" width="86.75" height="86.75" />  
+                        </svg>
+                        <div class="elipsFooter"></div>
+                    </div>          
+                    
+                    <div style="margin-top: 78px;"></div>
+
+
+                    <div class="col-md-6 col-sm-12 footerText1">Hidegram</div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <div class="footerText2 mb-3">COMPANY</div>
+                        <div>How it works</div>
+                        <div>Pricing</div>
+                        <div>Demo</div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <div class="footerText2 mb-3">RESOURCES</div>
+                        <div>Blog post name goes here</div>
+                        <div>Blog post name goes here</div>
+                        <div>Blog post name goes here</div>
+                        <div>See all resources</div>
+                    </div>
+
+                    <div class="col-md-2 col-sm-12">
+                        <div class="footerText2 mb-3">ABOUT</div>
+                        <div>Terms & Conditions</div>
+                        <div>Privacy Policy</div>
+                    </div>
+
+                    <div class="col-12 text-center footerText3">Copyright © 2024 Hidegram</div>
+                </div>
             </div>
   
         </footer>

@@ -16,7 +16,7 @@
     justify-content: center;
     align-items: start;
     overflow:hidden;
-    height: 780px;
+    height: auto;
 }
 
 .examble{
@@ -128,7 +128,6 @@
         font-size: 24px;
         width: 343px;
         text-align: center;
-
 
         padding-left: 50px;
         padding-right: 50px;

@@ -35,14 +35,16 @@
     color: #fff;
 
     padding-bottom: 32px;
+    padding-top: 40px;
 }
 
 .sidebar {
     position: fixed;
-    top: 91px;
+    /* top: 91px; */
     
     height: auto;
     width: 250px;
+    z-index: 2;
   }
 
   .sidebar-nav {
@@ -64,6 +66,17 @@
     color: #fff;
   }
 
+  .background{
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 200%; 
+    height: 100%; 
+    background: rgb(17, 17, 17);
+    z-index: -2;
+
+}
+
   @media (max-width:770px) {
 
     .legalTextMain{
@@ -82,12 +95,14 @@
       font-size: 22px;
       line-height: 127%;
 
+      padding-top: 18px;
+
       padding-bottom: 22px;
     }
-
+/* 
     .sidebar{
       top: 60px;
-    }
+    } */
 
     .sidebar-nav .nav-link {
       font-weight: 600;

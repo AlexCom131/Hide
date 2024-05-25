@@ -5,6 +5,7 @@
 
     overflow: hidden;
 }
+
 .squar{
     position: absolute;
     stroke: rgb(255, 255, 255);
@@ -196,7 +197,7 @@
 
 .introContainerClients{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 600px;
     row-gap: 32px;
     justify-content: center; 
     justify-items: center;
@@ -216,35 +217,43 @@
     font-family: "Inter";
 }
 
-.clientsLogo {
-    /* display: grid;
-    grid-template-columns: repeat(6, auto);
-    gap: 40px; */
+.wrap{
+    max-width: 1440px;
+}
+
+.items-wrap {
+    position: relative;
     display: flex;
-    padding-right: 48px;
-    width: 300%;
+    gap: 48px;
+  }
+
+.items-wrap:before,.items-wrap:after {
+    content: "";
+    height: 100%;
+    top: 0;
+    width: 10%;
+    position: absolute;
+    z-index: 1;
+  }
+
+.items {
+    flex-shrink: 0;
+    display: flex;
+    gap: 48px;
     align-items: center;
-    overflow: hidden; 
-    animation: moveRight 40s linear infinite;
+    min-width: 100%;
 }
-
-.clientsLogo span{
-   
-   display: flex;
-   justify-content: space-around;
-   width: 100%;
+  
+.marquee {
+    animation: scroll 60s linear infinite;
 }
-
-.clientsLogo img{
-    width: 70%;
-}
-
-@keyframes moveRight {
-    0% {
-        transform: translateX(0%);
+  
+@keyframes scroll {
+    from {
+      transform: translateX(0);
     }
     to {
-        transform: translateX(-50%); 
+      transform: translateX(calc(-100% - 48px));
     }
 }
 

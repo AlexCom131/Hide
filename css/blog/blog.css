@@ -1,5 +1,52 @@
 .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
     max-width: 1207px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.introImage {
+    width: 379px;
+    height: 273.56px;
+    background: #232627;
+    border-radius: 20px;
+    order: 1;
+    z-index: 2;
+}
+
+@media (max-width: 576px) {
+    .introImage {
+        width: auto;
+        height: 178px;
+    }
+}
+
+.autorIcon{
+    width: 28px; 
+    height: 28px; 
+    border-radius: 100%; 
+    background: #a6a6a6;
+
+    margin-right: 10px;
+    z-index: 2;
+}
+
+.dotIcon {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: #567dff;
+    margin: 0 10px 0 0;
+}
+
+.blogText {
+    /* order: 0;
+    margin-top: 10px; */
+}
+
+
+.autorName, .postDate {
+    margin-right: 10px;
 }
 
 a {
@@ -7,12 +54,19 @@ a {
 }
 
 .introBlog{
-    position: relative;
+   z-index: 1;
 }
+
+.introBlog1{
+    z-index: 2;
+}
+
+
 
 .positionEnd{
     display: grid;
     justify-content: end;
+    justify-self: end;
 }
 
 .introBlogText{
@@ -27,7 +81,6 @@ a {
 }
 
 .svgBild{
-    position: absolute;
     width: 100%;
     /* height: 100%; */
     left: 0;
@@ -41,8 +94,9 @@ a {
     padding: 0;
 
     */
-    margin-top: 412px; 
-    z-index: 0;
+    position: absolute;
+    padding-top: 412px; 
+    z-index: 1;
 }
 
 .previewBox{
@@ -57,17 +111,9 @@ a {
 }
 
 .introBlogContainer{
-    margin-top: 40px;
-}
-
-
-.contentBlog{
-    display: grid;
-    grid-template-columns: 546px;
-
-    margin-top: 90px;
-    align-items: center;
-    align-self: start;
+    z-index: 2;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .nameBlogTextMain{
@@ -89,16 +135,16 @@ a {
     margin-top: 11.84px;
 }
 
-.blogContainer{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 20px;
+.bluBall{
+    max-width: 6px; 
+    height: 6px; 
+    border-radius: 100%; 
+    background: #567dff;
 }
 
-.contentAutor{
-    margin-top: 9px;
-    display: grid;
-    justify-self: start;
+.ongoingsContainer{
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .ongoingBlog{
@@ -121,7 +167,14 @@ a {
 }
 
 .autorContainer{
+    display: flex;
+    align-items: center;
+    order: 0;
+
     margin-top: 29px;
+
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 .paddiingLeft{
@@ -130,6 +183,7 @@ a {
 
 .paddiingNull{
     padding-right: 0px;
+    padding-left: 0px;
 }
 
 .autorContainerPhone{
@@ -142,7 +196,7 @@ a {
     line-height: 160%;
     color: #fff;
 
-    padding-right: 5.3px;
+    margin-right: 10px;
 }
 
 .contentAutorSmallText{
@@ -150,6 +204,8 @@ a {
     font-size: 16px;
     line-height: 160%;
     color: #fff;
+
+    margin-right: 10px;
 }
 
 .contentAutorPhone{
@@ -168,7 +224,7 @@ a {
     line-height: 172%;
     color: #fff;
 
-    width: 378px;
+    max-width: 378px;
 
     margin-top: 18px;
 }
@@ -178,6 +234,7 @@ a {
 
 
     margin-top: 24px;
+    margin-bottom: 25px;
 }
 
 .blogName{
@@ -194,11 +251,7 @@ a {
     letter-spacing: -0.02em;
     color: #fff;
 
-    width: 182px; 
- 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    white-space: nowrap;
+    width: auto;
 }
 
 .userBlog{
@@ -240,6 +293,7 @@ a {
 
 .blog{
     margin-top: 40px;
+    
 }
 
 .buttonMoreContainer{
@@ -265,6 +319,30 @@ a {
     margin-bottom: 100px;
     }
 
+
+
+    .introImageOngoing{
+        border-radius: 20px;
+        width: 379px;
+        height: 273px;
+        background: #232627;
+    }
+
+    .blogTextOngoing{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 172%;
+        color: #fff;
+    
+        max-width: 378px;
+    
+        margin-top: 18px;
+    }
+
+    .buttonMorePhone{
+        display: none;
+    }
+
 @media (min-width: 1800px) {
     .svgBild {
       display: none; 
@@ -277,14 +355,12 @@ a {
         height: 29px;
 
         margin-top: 18px;
+        margin-bottom: 24px     ;
+
     }
 
     .introBlogContainer{
         margin-top: 0px;
-    }
-
-    .paddiingNull{
-        padding-right: 12px;
     }
 
     .lpText{
@@ -296,21 +372,113 @@ a {
         margin-top: 24px;
     }
 
+    .ongoingsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        flex-wrap: nowrap;
+        overflow-x: auto; 
+        width: 100px;
+        height: auto;
+        box-sizing: border-box;
+
+        margin-bottom: 24px;
+    }
+
     .lsOngoingsText1{
-        margin-top: 24px;
+        margin-top: 0px;
 
         font-size: 24px;
     }
 
     .blog{
+        flex: 1 0 21%;
         margin-top: 10px;
+        margin-right: 12px;
     }
 
+    .autorContainer{
+        margin-top: 0px;
+    }
+
+    .autorIcon{
+        border-radius: 1000px;
+        width: 40px;
+        height: 40px;
+    }
     .blogName{
         width: 180px;
+    }
+
+    .blogText{
+        margin-top: 13px;
+    }
+
+    .introImage{
+        margin-top: 16px;
+    }
+
+    .dotIcon{
+        display: none;
+    }
+
+    .contentAutorSmallText{
+        font-weight: 400;
+        font-size: 15px;
+        color: #6c7275;
+
+    }
+
+    .dataMargAuto{
+        margin-left: auto;
+
     }
 
     .marginTop{
         margin-top: 0px;
     }
+
+    .introImageOngoing{
+        border-radius: 10px;
+        width: 140px;
+        height: 140px;
+    }
+
+
+    .blogTextOngoing{
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+        white-space: nowrap;        
+        width: 140px;
+
+        font-weight: 600;
+        font-size: 15px;
+
+        margin-top: 6px;
+    }
+
+    .buttonMorePhone{
+        display: block;
+        width: 8px;
+        height: 13px;
+        justify-content: center;
+        margin-top: 5px;
+        margin-right: 10px;
+    }
+
+    .buttonMore{
+        display: none;
+    }
+
+  }
+
+  @media (min-width:570px) {
+
+    .blogTitelPhone{
+        display: none;
+    }
+
+    .blogLineal{
+        display: none;
+    }
+    
   }

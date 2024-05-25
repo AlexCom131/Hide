@@ -22,3 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+// function toggleText() {
+//     var answer = document.getElementById("answer");
+//     answer.classList.toggle("show");
+// }
+
