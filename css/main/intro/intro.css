@@ -1,9 +1,9 @@
 .inroContainerSquad{
+    position: absolute;
     display: flex;
+    position: relative;
     justify-content: center; 
     align-items: center;
-
-    overflow: hidden;
 }
 
 .squar{
@@ -19,6 +19,7 @@
     gap: 7.23px;
     opacity: 0.28;
     /* opacity: 0.5; */
+    
 }
 
 .elips{
@@ -30,9 +31,6 @@
 
     /* background: -webkit-radial-gradient(center, ellipse cover, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
     /* background: radial-gradient(ellipse at center, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
-  
-
-
 
     filter: blur(216.875px);
     /* 150 */
