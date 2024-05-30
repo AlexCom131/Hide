@@ -1,6 +1,6 @@
-.wallpaper1{
+/* .wallpaper1{
     max-height: 100vh;
-}
+} */
 
 .formContainer{
     display: grid;
@@ -123,10 +123,82 @@
     width: 192px;
     height: 48px;
 
-    font-family: 'Inter';
     font-weight: 600;
     font-size: 18px;
     line-height: 178%;
     letter-spacing: -0.03em;
     color: #567dff;
 }
+
+
+
+
+.textQuestion{
+    font-weight: 400;
+    font-size: 15px;
+    color: #979797;
+}
+
+.introQuestion{
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+}
+
+.sendMessage{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #567dff;
+
+    background: none;
+    border: none;
+
+}
+
+input{
+    background: none;
+    border: none;
+
+font-size: 15px;
+
+color: #ebebf5;
+}
+
+
+
+.message{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
+    color: #fff;
+
+
+    background: none;
+    border: none;
+    height: 50vh;
+}
+
+textarea {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text; 
+    user-select: text; 
+}
+
+.blogLineal{
+    border: 1px solid #232323;
+
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+@media (max-width:570px) {
+    .formContainer{
+        display: none;
+    }
+}
+
+

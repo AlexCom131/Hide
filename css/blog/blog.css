@@ -14,13 +14,6 @@
     z-index: 2;
 }
 
-@media (max-width: 576px) {
-    .introImage {
-        width: auto;
-        height: 178px;
-    }
-}
-
 .autorIcon{
     width: 28px; 
     height: 28px; 
@@ -39,34 +32,8 @@
     margin: 0 10px 0 0;
 }
 
-.blogText {
-    /* order: 0;
-    margin-top: 10px; */
-}
-
-
-.autorName, .postDate {
-    margin-right: 10px;
-}
-
 a {
     text-decoration: none;
-}
-
-.introBlog{
-   z-index: 1;
-}
-
-.introBlog1{
-    z-index: 2;
-}
-
-
-
-.positionEnd{
-    display: grid;
-    justify-content: end;
-    justify-self: end;
 }
 
 .introBlogText{
@@ -74,29 +41,19 @@ a {
     font-size: 54px;
     color: #fff;
 
-    /* grid-column: 1/3; */
-
     margin-top: 42px;
     height: 65px;
 }
 
 .svgBild{
     width: 100%;
-    /* height: 100%; */
-    left: 0;
-    right: 0;
-    /* width:1440px; 
-    height:574px; */
-    
-    /* top: 0;
     left: 0;
     right: 0;
     padding: 0;
 
-    */
     position: absolute;
     padding-top: 412px; 
-    z-index: 1;
+    z-index: -1;
 }
 
 .previewBox{
@@ -106,8 +63,6 @@ a {
     background: #232627;
 
     margin-top: 50px;
-
-    /* margin-right: 40px; */
 }
 
 .introBlogContainer{
@@ -132,59 +87,24 @@ a {
     margin-top: 11.84px;
 }
 
-.bluBall{
-    max-width: 6px; 
-    height: 6px; 
-    border-radius: 100%; 
-    background: #567dff;
-}
-
 .ongoingsContainer{
     padding-left: 12px;
     padding-right: 12px;
-}
-
-.ongoingBlog{
-    width: 379px;
-    margin-top: 40px;
-
-    align-items: center;
-}
-
-.ongoingBlogPhone{
-    width: 343px;
-    
-}
-
-.ongoingBox{
-    width: 379px; 
-    height: 273.56px; 
-    background: #232627; 
-    border-radius: 20px;
 }
 
 .autorContainer{
     display: flex;
     align-items: center;
     order: 0;
-
     margin-top: 29px;
 
     padding-left: 12px;
     padding-right: 12px;
 }
 
-.paddiingLeft{
-    padding-left: 10px;
-}
-
 .paddiingNull{
     padding-right: 0px;
     padding-left: 0px;
-}
-
-.autorContainerPhone{
-    margin-top: 23px;
 }
 
 .contentAutorBigText{
@@ -205,16 +125,6 @@ a {
     margin-right: 10px;
 }
 
-.contentAutorPhone{
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 129%;
-    letter-spacing: -0.02em;
-    color: #fff;
-
-    margin-top: 13px;
-}
-
 .blogText{
     font-weight: 500;
     font-size: 18px;
@@ -222,23 +132,14 @@ a {
     color: #fff;
 
     max-width: 378px;
-
     margin-top: 18px;
 }
 
 .blogLineal{
     border: 1px solid #232323;
 
-
     margin-top: 24px;
     margin-bottom: 25px;
-}
-
-.blogName{
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 172%;
-    color: #fff; 
 }
 
 .blogTitelPhone{
@@ -251,36 +152,7 @@ a {
     width: auto;
 }
 
-.userBlog{
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 133%;
-    letter-spacing: -0.02em;
-    color: #6c7275;
-}
-
-.textPost{
-
-    font-weight: 700;
-    font-size: 36px;
-    color: #fff;
-
-    margin-top: 170.32px;
-}
-
-.lpText{
-    font-weight: 700;
-    font-size: 36px;
-    color: #fff;
-
-    margin-top: 170px;
-}
-
-.marginTop{
-    margin-top: 40px;
-}
-
-.lsOngoingsText1{
+.lsOngoingsText{
     font-weight: 700;
     font-size: 36px;
     color: #fff;
@@ -289,15 +161,7 @@ a {
 }
 
 .blog{
-    margin-top: 40px;
-    
-}
-
-.buttonMoreContainer{
-    display: grid;
-    justify-content: center;
-
-    margin-bottom: 100px;
+    margin-top: 40px; 
 }
 
 .buttonMore{
@@ -315,8 +179,6 @@ a {
     margin-top: 53px;
     margin-bottom: 100px;
     }
-
-
 
     .introImageOngoing{
         border-radius: 20px;
@@ -352,21 +214,17 @@ a {
         height: 29px;
 
         margin-top: 18px;
-        margin-bottom: 24px     ;
+        margin-bottom: 24px;
 
+    }
+
+    .introImage {
+        width: auto;
+        height: 178px;
     }
 
     .introBlogContainer{
         margin-top: 0px;
-    }
-
-    .lpText{
-        font-weight: 700;
-        font-size: 24px;
-        letter-spacing: -0.03em;
-        color: #fefefe;
-
-        margin-top: 24px;
     }
 
     .ongoingsContainer{
@@ -381,7 +239,7 @@ a {
         margin-bottom: 24px;
     }
 
-    .lsOngoingsText1{
+    .lsOngoingsText{
         margin-top: 0px;
 
         font-size: 24px;
@@ -427,11 +285,6 @@ a {
 
     .dataMargAuto{
         margin-left: auto;
-
-    }
-
-    .marginTop{
-        margin-top: 0px;
     }
 
     .introImageOngoing{
