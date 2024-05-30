@@ -39,7 +39,7 @@
 }
 
 .sidebar {
-  /* position: fixed; */
+  position: fixed;
     height: auto;
     max-width: 1207px;
     min-width: 100px;
