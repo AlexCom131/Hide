@@ -85,6 +85,11 @@ a {
     line-height: 160%;
     color: #fff;
     margin-top: 11.84px;
+
+    display: grid;
+    justify-content: end;
+
+    max-width: 546px;
 }
 
 .ongoingsContainer{
