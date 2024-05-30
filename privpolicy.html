@@ -33,7 +33,7 @@
                     <div class="burger"></div>
 
                     <div class="mittel ">
-                        <div><a class="header-menu-butter"  href="index.html">Main</a></div>
+                        <div><a class="header-menu-butter" style="padding-top: 50px;" href="index.html">Main</a></div>
                         <div><a class="header-menu-butter" href="about.html">About</a></div>
                         <div><a class="header-menu-butter" style="color: #fff;" href="privpolicy.html">Privacy Policy</a></div>
                         <div><a class="header-menu-butter" href="blog.html">Blog</a></div>
@@ -44,7 +44,7 @@
                 </div>
             <div class="language">
                 <div class="header-language"><img src="img\header\globe_light.png" width="24" height="24"></div>
-                <div href="@" style="margin-left: 9px;">ENG</div>
+                <div href="@" style="margin-left: 6px;">ENG</div>
                 <div class="vector" href="@"><img src="img\header\Vector.png" wigth="10" height="6"></div>
             </div>
         </header>
@@ -89,10 +89,10 @@
                               </div>
                         </div>
 
-                        <div class="col-md-3 ms-auto col-sm-12 order-0 order-md-1 sticky-top">
+                        <div class="col-md-3 ms-auto col-sm-12 order-0 order-md-1">
                             <div class="sidebar">
                                 <div class="background"></div>
-                                <div class="legal">Legal</div>
+                                <div class="legal ms-auto">Legal</div>
                                 <div class="row">
                                     <div class="col-auto blueLineal"></div>
                                     <ul class="col-auto nav flex-column sidebar-nav">
@@ -252,7 +252,21 @@
         document.addEventListener("DOMContentLoaded", function() {
         const sections = document.querySelectorAll(".content > div");
         const navLinks = document.querySelectorAll(".sidebar-nav .nav-link");
-        const offsetAdjustment = 60;
+        let offsetAdjustment = 60; 
+
+        const updateOffsetAdjustment = () => {
+            if (window.innerWidth < 768) {
+                offsetAdjustment = 260; 
+            } else {
+                offsetAdjustment = 60; 
+            }
+        };
+
+
+        updateOffsetAdjustment();
+
+
+        window.addEventListener("resize", updateOffsetAdjustment);
 
         navLinks.forEach(link => {
             link.addEventListener("click", event => {

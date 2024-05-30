@@ -72,12 +72,12 @@ header{
     text-decoration: none;
     line-height: 19.36px;
     text-align: center;
-
 }
 
-/* .dropMenu{
+
+.dropMenu{
   display: none;
-} */
+}
 
 .burger{
   display: flex;
@@ -171,6 +171,11 @@ header{
     font-weight: 500;
     align-items: center;
     justify-self: end;
+}
+
+.header-language{
+    margin-bottom: 2px;
+    
 }
 
 .vector{

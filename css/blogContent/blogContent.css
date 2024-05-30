@@ -230,7 +230,7 @@
         border-radius: 0%; 
         height: auto;
         padding-bottom: 110px;
-        
+        filter: brightness(80%);
     }
 
     .subtitleText{

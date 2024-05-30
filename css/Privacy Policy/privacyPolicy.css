@@ -33,26 +33,34 @@
     font-weight: 600;
     font-size: 16px;
     color: #fff;
-
-    padding-bottom: 32px;
+    
     padding-top: 40px;
+    padding-bottom: 32px;
 }
 
 .sidebar {
-    position: fixed;
-    /* top: 91px; */
-    
+  position: fixed;
     height: auto;
-    width: 250px;
-    z-index: 2;
+    max-width: 1207px;
+    min-width: 100px;
 
-    margin-left: auto;
+    /* margin-top: 91px; */
+
+    /* display: grid;
+    margin-left: auto; */
   }
 
-  .sidebar-nav {
-    /* border-radius: 1px;
-    border-left: 4px solid rgba(86, 125, 255, 1);  */
-  }
+  .background{
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    width: 100vh; 
+    height: 100%;
+    background: rgb(17, 17, 17);
+    z-index: -1;
+}
+
     .blueLineal{
       width: 4px;
       height: auto;
@@ -76,17 +84,6 @@
     color: #fff;
   }
 
-  .background{
-    position: absolute;
-    left: 0;
-    right: 0;
-    width: 200%; 
-    height: 100%; 
-    background: rgb(17, 17, 17);
-    z-index: -2;
-
-}
-
   @media (max-width:770px) {
 
     .legalTextMain{
@@ -104,10 +101,8 @@
       font-weight: 700;
       font-size: 22px;
       line-height: 127%;
-
-      padding-top: 18px;
-
       padding-bottom: 22px;
+      padding-top: 18px;
     }
 /* 
     .sidebar{
