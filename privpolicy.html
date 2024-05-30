@@ -32,7 +32,7 @@
                 <div class="dropMenu">
                     <div class="burger"></div>
 
-                    <div class="mittel">
+                    <div class="mittel ">
                         <div><a class="header-menu-butter"  href="index.html">Main</a></div>
                         <div><a class="header-menu-butter" href="about.html">About</a></div>
                         <div><a class="header-menu-butter" style="color: #fff;" href="privpolicy.html">Privacy Policy</a></div>
@@ -54,7 +54,7 @@
                 <div class="container">
                     <div class="row">
                         
-                        <div class="col-md-9 col-sm-12 order-1 order-sm-0">
+                        <div class="col-md-9 col-sm-12 order-1 order-md-0">
         
                             <div class="content">
                                 <div id="section1">
@@ -89,24 +89,27 @@
                               </div>
                         </div>
 
-                        <div class="col-md-3 col-sm-12 ms-auto order-0 order-sm-1 sticky-top">
+                        <div class="col-md-3 ms-auto col-sm-12 order-0 order-md-1 sticky-top">
                             <div class="sidebar">
                                 <div class="background"></div>
                                 <div class="legal">Legal</div>
-                                <ul class="nav flex-column sidebar-nav">
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#section1">Terms of Service</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#section2">Terms of Use</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#section3">Acceptable Use Policy</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="#section4">Privacy Policy</a>
-                                    </li>
-                                </ul>
+                                <div class="row">
+                                    <div class="col-auto blueLineal"></div>
+                                    <ul class="col-auto nav flex-column sidebar-nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#section1">Terms of Service</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#section2">Terms of Use</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#section3">Acceptable Use Policy</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#section4">Privacy Policy</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -247,38 +250,39 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-          const sections = document.querySelectorAll(".content > div");
-          const navLinks = document.querySelectorAll(".sidebar-nav .nav-link");
-      
-          navLinks.forEach(function(link) {
-            link.addEventListener("click", function(event) {
-              event.preventDefault();
-              const targetId = this.getAttribute("href").slice(1);
-              const targetSection = document.getElementById(targetId);
-              const offsetTop = targetSection.offsetTop;
-              
-              window.scrollTo({
-                top: offsetTop,
+        const sections = document.querySelectorAll(".content > div");
+        const navLinks = document.querySelectorAll(".sidebar-nav .nav-link");
+        const offsetAdjustment = 60;
+
+        navLinks.forEach(link => {
+            link.addEventListener("click", event => {
+            event.preventDefault();
+            const targetId = link.getAttribute("href").slice(1);
+            const targetSection = document.getElementById(targetId);
+
+            window.scrollTo({
+                top: targetSection.offsetTop - offsetAdjustment,
                 behavior: "smooth"
-              });
             });
-          });
-      
-          window.addEventListener("scroll", function() {
-            let fromTop = window.scrollY;
-            sections.forEach(function(section) {
-              if (fromTop >= section.offsetTop && fromTop < section.offsetTop + section.offsetHeight) {
-                let targetId = section.getAttribute("id");
-                navLinks.forEach(function(link) {
-                  if (link.getAttribute("href") === "#" + targetId) {
-                    link.classList.add("active");
-                  } else {
-                    link.classList.remove("active");
-                  }
+            });
+        });
+
+        window.addEventListener("scroll", () => {
+            const fromTop = window.scrollY;
+            
+            sections.forEach(section => {
+            const sectionTop = section.offsetTop - offsetAdjustment;
+            const sectionBottom = sectionTop + section.offsetHeight;
+
+            if (fromTop >= sectionTop && fromTop < sectionBottom) {
+                const targetId = section.getAttribute("id");
+
+                navLinks.forEach(link => {
+                link.classList.toggle("active", link.getAttribute("href") === `#${targetId}`);
                 });
-              }
+            }
             });
-          });
+        });
         });
       </script>
         

@@ -1,14 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const text3Elements = document.querySelectorAll(".burger");
+  const burger = document.querySelector(".burger");
+  const menu = document.querySelector(".mittel");
 
-    text3Elements.forEach(function(text3) {
-      text3.addEventListener("click", function() {
-        const text4 = this.nextElementSibling;
-        this.classList.toggle('active');
-        text4.classList.toggle("show");
-      });
-    });
+  burger.addEventListener("click", function() {
+    this.classList.toggle('active');
+    menu.classList.toggle("show");
   });
+});
 
   document.addEventListener("DOMContentLoaded", function() {
     var toggleCheckbox = document.getElementById("toggleButton");
