@@ -24,7 +24,7 @@ html, body{
 
 
 .walq{
-  overflow: hidden;
+  overflow: none;
 }
 
 .textShow{
@@ -244,7 +244,7 @@ footer{
   width: 694px;
   height: 694px;
 
-  margin-top: -130px;
+  margin-top: -145px;
 
   gap: 7.23px;
   opacity: 0.2;

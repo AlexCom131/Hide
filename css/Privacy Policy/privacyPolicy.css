@@ -1,5 +1,5 @@
 .container{
-    max-width: 1207px;
+    max-width: 1174px;
 }
 
 .privacy{
@@ -20,11 +20,22 @@
     margin-top: 40px;
 }
 
+.legalTextMainFirst{
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 104%;
+  color: #fefefe;
+
+  margin-top: 40px;
+}
+
 .legalTextContent{
     font-weight: 400;
     font-size: 20px;
     line-height: 171%;
     color: #fefefe;
+
+    max-width: 873px;
 
     margin-top: 25px;
 }
@@ -34,15 +45,18 @@
     font-size: 16px;
     color: #fff;
     
-    padding-top: 40px;
+    /* padding-top: 40px; */
     padding-bottom: 32px;
 }
 
 .sidebar {
-  position: fixed;
+    max-width: 235px;
+    position: sticky;
     height: auto;
-    max-width: 1207px;
-    min-width: 100px;
+    top: 92px;
+    /* padding-top: 18px; */
+    /* max-width: 1207px;
+    min-width: 100px; */
 
     /* margin-top: 91px; */
 
@@ -55,7 +69,7 @@
 
     left: 0;
     right: 0;
-    width: 100vh; 
+    width: auto; 
     height: 100%;
     background: rgb(17, 17, 17);
     z-index: -1;
@@ -71,11 +85,11 @@
     }
 
   .sidebar-nav .nav-link {
-    padding: .25rem 1rem;
+    padding: 7px 1rem;
     color: #938c8c;
     font-weight: 500;
     font-size: 16px;
-    line-height: 137%;
+
     
   }
 
@@ -84,9 +98,17 @@
     color: #fff;
   }
 
-  @media (max-width:770px) {
+  @media (max-width:768px) {
 
     .legalTextMain{
+      font-weight: 700;
+      font-size: 24px;
+      margin-top: 30px;
+    }
+
+    .legalTextMainFirst{
+      margin-top: 0;
+
       font-weight: 700;
       font-size: 24px;
     }
@@ -95,6 +117,8 @@
       font-weight: 400;
       font-size: 17px;  
       line-height: 129%;
+
+      margin-top: 12px;
     }
 
     .legal{
@@ -104,17 +128,22 @@
       padding-bottom: 22px;
       padding-top: 18px;
     }
-/* 
+
     .sidebar{
-      top: 60px;
-    } */
+      max-width: 100vh;
+      top: 51px;
+    }
 
     .sidebar-nav .nav-link {
       font-weight: 600;
     }
 
+    .sidebarPad{
+      padding-bottom: 22px;
+    }
+
     .content{
-      margin-top: 220px;
+      /* margin-top: 220px; */
     }
     
   }
