@@ -96,16 +96,21 @@ a {
 .ongoingsContainer{
     padding-left: 12px;
     padding-right: 12px;
+
+    /* display: flex;
+    gap: 20px; */
+
 }
 
 .autorContainer{
     display: flex;
+    max-width: 350px;
     align-items: center;
     order: 0;
     margin-top: 29px;
 
-    padding-left: 12px;
-    padding-right: 12px;
+    /* padding-left: 12px;
+    padding-right: 12px; */
 }
 
 .paddiingNull{
@@ -168,7 +173,8 @@ a {
 
 .blog{
     margin-top: 40px; 
-}
+    max-width: 379px;
+ }
 
 .buttonMore{
     border-radius: 50px;
@@ -188,9 +194,13 @@ a {
 
     .introImageOngoing{
         border-radius: 20px;
-        width: 379px;
-        height: 273px;
+
         background: #232627;
+
+        height: 273.56px;
+        width: auto;
+
+        /* height: 52%; */
     }
 
     .blogTextOngoing{
@@ -199,7 +209,7 @@ a {
         line-height: 172%;
         color: #fff;
     
-        max-width: 378px;
+        /* max-width: 350px; */
     
         margin-top: 18px;
     }
@@ -212,6 +222,23 @@ a {
     .svgBild {
       display: none; 
     }
+  }
+
+  @media (max-width:1195px) {
+    .introImageOngoing{
+        aspect-ratio: 3/2;
+        height: 62%;
+    }
+
+    
+.blog{
+
+    padding-right: 20px;
+}
+
+  .blog:nth-child(3n){
+    padding-right: 0px;
+  }
   }
 
   @media (max-width:570px) {
@@ -307,7 +334,6 @@ a {
         height: 140px;
     }
 
-
     .blogTextOngoing{
         overflow: hidden; 
         text-overflow: ellipsis; 
@@ -346,3 +372,6 @@ a {
     }
     
   }
+
+
+
