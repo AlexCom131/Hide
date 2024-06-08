@@ -4,15 +4,29 @@
 
     padding-left: 16px;
     padding-right: 16px;
+
+    overflow-x: hidden;
+}
+
+.blogIntro{
+    max-width: 379px;
 }
 
 .introImage {
-    width: 379px;
+    max-width: auto;
     height: 273.56px;
     background: #232627;
     border-radius: 20px;
     order: 1;
     z-index: 2;
+}
+
+.autorIconIntro{
+    width: 39.68px; 
+    height: 39.68px; 
+    border-radius: 100%; 
+    background: #a6a6a6; 
+    margin-right: 10px;
 }
 
 .autorIcon{
@@ -23,6 +37,14 @@
 
     margin-right: 10px;
     z-index: 2;
+}
+
+.dotIconIntro{
+    width: 6px; 
+    height: 6px; 
+    border-radius: 100%; 
+    background: #567dff; 
+    margin-right: 10px;
 }
 
 .dotIcon {
@@ -104,9 +126,7 @@ a {
 
 .autorContainer{
     display: flex;
-    max-width: 350px;
     align-items: center;
-    order: 0;
     margin-top: 29px;
 
     /* padding-left: 12px;
@@ -190,7 +210,7 @@ a {
 
     margin-top: 53px;
     margin-bottom: 100px;
-    }
+}
 
     .introImageOngoing{
         border-radius: 20px;
@@ -218,30 +238,142 @@ a {
         display: none;
     }
 
+    
+
 @media (min-width: 1800px) {
     .svgBild {
       display: none; 
     }
   }
 
-  @media (max-width:1195px) {
-    .introImageOngoing{
-        aspect-ratio: 3/2;
-        height: 62%;
+  @media (max-width:1200px) {
+
+    .introBlogText{
+        font-size: 5.4vw; 
+        height: 6.5vw;
+
     }
 
-    
-.blog{
+    .previewBox{
+        aspect-ratio: 3/2;
+        height: 100%;
 
-    padding-right: 20px;
-}
+        margin-top: 5vw;
+    }
 
-  .blog:nth-child(3n){
-    padding-right: 0px;
-  }
+    .nameBlogTextMain{
+        font-size: 2.4vw; 
+    }
+
+    .descriptionBlogText{
+        font-size: 1.8vw; 
+    }
+
+    .introBlogContainer{
+        margin-left: 10px;
+        scale:104%;
+    }
+
+    .contentAutorBigText{
+        font-size: 1.8vw; 
+    }
+
+    .autorIconIntro{
+        width: 3.9vw;
+        height: 3.9vw;
+    }
+
+    .introImage{
+        aspect-ratio: 3/2;
+        height: 82%;
+    }
+
+    .blogIntro{
+        padding-right: 20px;
+    }
+
+    .blogText{
+        font-size: 1.4vw;        
+        margin-top: 1.6vw;
+    }
+
+
+    .lsOngoingsText{
+        font-size: 3vw;        
+
+        margin-top: 7vw;
+    }
+
+
+    .ongoingsContainer{
+        margin-left: 10px;
+        scale:104%;
+    }
+
+    .introImageOngoing{
+        aspect-ratio: 3/2;
+        height: 82%;
+
+    }
+
+
+    .blog {
+        padding-right: 20px;
+      }
+
+      .autorContainer{
+        display: flex;
+        align-items: center;
+        order: 0;
+        margin-top: 1.6vw;
+      }
+
+      .contentAutorSmallText{
+        font-size: 1.2vw;        
+        white-space: nowrap;
+     }
+
+     .blogTextOngoing{
+        font-size: 1.4vw;        
+        margin-top: 1.6vw;
+    }
+
+    .autorIcon{
+        width:  2.2vw;
+        height: 2.2vw;
+    }
+
+    .dotIcon{
+        width: .4vw;
+        height: .4vw;
+    }
+
+    .buttonMore{
+        width: 20vw;
+        height: 4.8vw;
+        font-size: 1.8vw;
+
+        margin-top: 5.3vw;
+        margin-bottom: 10vw;
+    }
+
   }
 
   @media (max-width:570px) {
+
+    .introBlogContainer{
+        margin-left: 0;
+        padding-left: 0;
+        scale:100%;
+    }
+
+    .blogIntro{
+        max-width: 100%;
+    }
+
+    .blogIntro{
+        padding-right: 0;
+    }
 
     .svgBild {
         display: none; 
@@ -275,6 +407,7 @@ a {
         box-sizing: border-box;
 
         margin-bottom: 24px;
+        padding-left: 0;
     }
 
     .lsOngoingsText{
@@ -306,6 +439,8 @@ a {
 
     .blogText{
         margin-top: 10px;
+        font-weight: 500;
+        font-size: 18px;
     }
 
     .introImage{
@@ -372,6 +507,9 @@ a {
     }
     
   }
+
+
+
 
 
 
