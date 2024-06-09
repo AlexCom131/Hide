@@ -81,7 +81,7 @@ a {
 
 .previewBox{
     border-radius: 30px;
-    max-width: 589px;
+    width: 589px;
     height: 409px;
     background: #232627;
 
@@ -257,6 +257,7 @@ a {
     .previewBox{
         aspect-ratio: 3/2;
         height: 100%;
+        width: auto;
 
         margin-top: 5vw;
     }
