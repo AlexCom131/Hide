@@ -270,7 +270,7 @@
         left: 0px;
     }
     .squar{
-        margin-top: 170px;
+        /* margin-top: 170px; */
         margin-left: 37px;
     }
 
@@ -311,7 +311,7 @@
     }
 
     .introContainerClients{
-    margin-top: 70px;
+    margin-top: -40px;
     }
 
     .clientsLogo{
@@ -321,12 +321,13 @@
     .squar{
         /* height: 600px;
         margin-top: 410px; */
-        height: 600px;
-        margin-top: 410px;
+        /* height: 326px; */
+        margin-top: 175px;
     }
 
     .walq{
         overflow:hidden;
-        
+        height: 326px;
+
       }
 }

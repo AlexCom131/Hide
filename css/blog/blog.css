@@ -270,7 +270,7 @@ a {
     }
 
     .introBlogContainer{
-        margin-left: 10px;
+        margin-left: 1vw;
         scale:104%;
     }
 
@@ -301,12 +301,12 @@ a {
     .lsOngoingsText{
         font-size: 3vw;        
 
-        margin-top: 7vw;
+        margin-top: 14vw;
     }
 
 
     .ongoingsContainer{
-        margin-left: 10px;
+        margin-left: 1vw;
         scale:104%;
     }
 
@@ -398,13 +398,10 @@ a {
     }
 
     .ongoingsContainer{
-        display: flex;
-        flex-wrap: wrap;
         flex-wrap: nowrap;
         overflow-x: auto; 
-        width: 100px;
+        width: 100%;
         height: auto;
-        box-sizing: border-box;
 
         margin-bottom: 24px;
         padding-left: 0;
@@ -417,8 +414,8 @@ a {
     }
 
     .blog{
-        flex: 1 0 21%;
-        margin-top: 10px;
+        width: 145px;
+        margin-top: 12px;
         margin-right: 12px;
     }
 
