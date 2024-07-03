@@ -121,24 +121,10 @@ header{
 }
 
 .mittel{
-
-  /* position: absolute;
-  width: 100%;
-  height: 1000px;
-  transform: translateY(-110%);
-  background: #111;
-  top: 0;
-  left: 0;
-  z-index: 6;
-  padding-top: 40px;
-  padding-left: 24px;
-  transition: transform 0.5s ease; */
   position: absolute;
   width: 100%;
   background: #111;
   left: 0;
-  /* padding-top: 40px; */
-  /* padding-bottom: 500px; */
   top: 0;
   z-index: 6;
   height: 0;

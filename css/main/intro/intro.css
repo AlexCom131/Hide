@@ -1,45 +1,65 @@
 .inroContainerSquad{
     position: absolute;
-    display: flex;
-    position: relative;
-    justify-content: center; 
+    display: grid;
+    grid-template-columns: 694px;
     align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    left: 50%;
+    transform: translate(-50%);
+
+    z-index: -10;
+}
+
+.squadContainer{
+    position: absolute;
+    display: grid;
+    position: relative;
+    grid-template-columns: 694px;
+    justify-items: end;
+    align-items: center;
+    justify-items: center;
+    padding-right: 200px;
+    
+    /* width: 694px; 
+    height: 445px;  */
+   
 }
 
 .squar{
-    position: absolute;
+    stroke-width: .7px;
     stroke: rgb(255, 255, 255);
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
     width: 694px;
-    height: 694px;  
-    margin-top: 500px;
-    z-index: -2;
+    height: 694px;
+
+    margin-top: -100px;
+
     gap: 7.23px;
-    opacity: 0.28;
-    /* opacity: 0.5; */
-    
+    opacity: 0.3;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    z-index: -2;
 }
 
-.elips{
 
+.elips{
     grid-column: 1/-1;
     grid-row: 1/-1;
     position: absolute;
-    /* background: radial-gradient(circle, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%); */
+    
+    border-radius: 100%;
+    /* background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgb(17, 17, 17) 46.59%); */
     background: radial-gradient(circle, rgba(22, 22, 24, 0.434) 5%, rgb(17, 17, 17) 30%);
 
 
+    /* background: radial-gradient(closest-side,  rgba(22, 22, 24, 0.147) 20%,rgb(17, 17, 17) 10%); */
 
-    /* background: -webkit-radial-gradient(center, ellipse cover, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
-    /* background: radial-gradient(ellipse at center, rgba(22, 22, 24, 0.147) 20%, rgb(17, 17, 17) 10%);  */
+    margin-top: -100px;
+    filter: blur(100.875px);
+    width: 1518px;
+    height: 1518px;
 
-    filter: blur(150.875px);
-    /* 150 */
-    width: 1382.22px;
-    height: 1382.22px;
-    margin-top:445.11px;
     z-index: -1;
 }
 
@@ -47,6 +67,7 @@
     display: grid;
     justify-content: center; 
     align-items: center;
+
 }
 
 .text1{
