@@ -127,16 +127,21 @@
     font-size: 18px;
     line-height: 178%;
     letter-spacing: -0.03em;
-    color: #567dff;
+    color: #567DFF;
 }
 
 
-
+.inputMail {
+    color: #567DFF; /* Колір тексту при введенні */
+}
 
 .textQuestion{
     font-weight: 400;
     font-size: 15px;
     color: #979797;
+
+    flex-wrap: nowrap;
+
 }
 
 .introQuestion{
@@ -189,10 +194,15 @@ textarea {
 }
 
 .blogLineal{
-    border: 1px solid #232323;
+    border: 1px solid #343839;
 
     margin-top: 12px;
     margin-bottom: 12px;
+}
+
+.message::placeholder {
+    color: #ffffff; 
+    opacity: 1; 
 }
 
 @media (max-width:570px) {

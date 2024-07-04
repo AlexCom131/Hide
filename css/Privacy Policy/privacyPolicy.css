@@ -130,6 +130,7 @@
     }
 
     .sidebar{
+      position:static;
       max-width: 100vh;
       top: 51px;
     }
