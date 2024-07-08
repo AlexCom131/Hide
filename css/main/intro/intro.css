@@ -275,10 +275,7 @@
         top:12px;
         left: 0px;
     }
-    .squar{
-        /* margin-top: 170px; */
-        margin-left: 37px;
-    }
+
 
     .elips{
         margin-top:9px;
@@ -325,20 +322,21 @@
     }
 
     .inroContainerSquad{
+
+        grid-template-columns: 100vw;
  
         margin-top: -160px;
-        max-height: 480px;
+        height: 480px;
         overflow:hidden;
-        overflow-x: hidden;
     }
     .squar{
         /* height: 600px;
         margin-top: 410px; */
         /* height: 326px; */
+
     }
 
     .walq{
-        overflow:hidden;
         height: 326px;
       }
 }
