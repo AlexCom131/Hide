@@ -127,11 +127,13 @@
     }
 
     .gridContainerIco{
-        grid-template-columns: 40px 283px;
+        grid-template-columns: 40px auto;
         grid-template-rows: 20px auto;
         row-gap: 0px;
         column-gap: 12px;
-
+        
+        padding-left: 17px;
+        padding-right: 17px;
         margin-bottom: 30px;
     }
 

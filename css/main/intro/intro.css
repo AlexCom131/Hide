@@ -278,7 +278,11 @@
 
 
     .elips{
-        margin-top:9px;
+        margin-top:40px;
+        background: radial-gradient(circle, rgba(54, 54, 54, 0.434) 15%, rgb(17, 17, 17) 10%);
+
+        width: 1218px;
+        height: 713px;
     }
     .text1{
         min-height:34px;
