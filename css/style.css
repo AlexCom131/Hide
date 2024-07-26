@@ -215,7 +215,7 @@ footer{
 .downSquadContainerFooter{
   position: absolute;
   display: grid;
-  grid-template-columns: 694px;
+  /* grid-template-columns: 694px; */
   justify-content: center;
   justify-self: center;
   overflow: hidden;
