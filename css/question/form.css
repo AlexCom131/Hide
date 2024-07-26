@@ -135,6 +135,10 @@
     color: #567DFF; /* Колір тексту при введенні */
 }
 
+.textForm{
+    height: 20px;
+}
+
 .textQuestion{
     font-weight: 400;
     font-size: 15px;
@@ -166,9 +170,11 @@ input{
     background: none;
     border: none;
 
-font-size: 15px;
+    font-size: 15px;
+    font-weight: 400;
 
-color: #EBEBF5;
+    color: #EBEBF5;
+
 }
 
 
@@ -194,8 +200,9 @@ textarea {
 }
 
 .blogLineal{
-    border: 1px solid #343839;
-
+    /* border: 0.5px solid #343839; */
+    height: .1px;
+    background: #343839;
     margin-top: 12px;
     margin-bottom: 12px;
 }
