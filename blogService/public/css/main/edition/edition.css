@@ -1,0 +1,366 @@
+.editionContainer{
+    display: grid;
+    grid-template-columns: auto;
+
+    justify-content: center;
+    justify-items: center;
+    
+    margin-top: 176px;
+
+}
+
+.switch-container {
+    display: inline-block;
+    justify-content: center;
+    position: relative;
+
+    margin-top: 24px;
+    margin-bottom: 34px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 262px;
+    height: 64px;
+    background-color: rgba(35, 38, 39, 1);
+    border-radius: 50px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 8px;
+    position: relative;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+label::after {
+    content: '';
+    border-radius: 50px;
+    width: 137px;
+    height: 48px;
+    background: rgba(86, 125, 255, 1);
+    border:1px solid rgba(255, 255, 255, .2);
+    position: absolute;
+    transform: translateX(83%);
+}
+
+label::after {
+    transition:  transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked + label::after {
+    /* left: calc(23%); */
+    transform: translateX(3%);
+}
+
+.switch-labels {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-60%);
+    width: 100%;
+    display: flex;
+    color: white;
+    font-size: 18px;
+    /* padding: 0 10px; */
+    pointer-events: none;
+} 
+
+.edition{
+    display:grid;
+    grid-template-columns: 576px 576px;
+    column-gap: 24px;
+    row-gap: 16px;
+    align-self: center;
+}
+
+.editionFreeContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.editionFree{
+    width: 576px;
+    border-radius: 24px;
+    background: linear-gradient(to bottom,rgba(32, 35, 36, 1),rgba(20, 23, 24, 1));
+    align-self: center;
+    z-index: 1;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.editionFreeBorder{ 
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    /* width: 577.5px;
+    height: 495px; */
+    width: 100.4%;
+    height: 100.4%;
+    border-radius: 24px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    /* border-radius: 24.5px; */
+    z-index: 0;
+}
+
+.wDemoEdition{
+    width: 496px; 
+    height: 48px;
+}
+
+.editionPayContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.editionPay{
+    width: 576px;
+    height: 493px;
+    background: linear-gradient(to bottom, rgb(34, 36, 55),rgb(21, 21, 26));
+    border-radius: 24px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+}
+
+.editionPayBorder{
+    /* width: 576px;
+    height: 576px; */
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+    /* width: 577.5px;
+    height: 506px; */
+    width: 100.4%;
+    height: 100.4%;
+    border-radius: 24px;
+    background: linear-gradient(to bottom, rgba(56, 138, 234), rgba(36, 116, 215, 0));
+    /* border-radius: 24.5px; */
+    z-index: 0;
+}
+
+.gStartedEdition{
+    width: 496px; 
+    height: 48px;
+}
+
+.editionText{
+    display: grid;
+    grid-template-columns: 496px;
+    margin: 40px;
+    row-gap: 12px;
+}
+
+.editionText0{
+    display: grid;
+    grid-template-columns: max-content;
+    column-gap: 12px;
+    row-gap: 12px;
+    justify-self: center;
+}
+
+.editionText1{
+    height: 24px;
+    font-family: "Inter";
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #6c7275;
+}
+
+.editionText2{
+    font-family: "Inter";
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 143%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.editionText3{
+    display: flex;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: -0.02em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #6c7275;
+    min-height: 11px;
+}
+
+.editionText4{
+    display: grid;
+    grid-template-columns:15.89px auto;
+    gap: 12px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.03em;
+    color: #ffffff;
+    text-align: left;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.grayLine{
+    height: 1px;
+    background: #343839;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1200px) {
+
+    .edition{
+      
+        grid-template-columns: 443px 443px;
+
+    }
+
+    .editionFree{
+        width: 443px;
+        
+    }
+
+    .gStartedEdition{
+        width: 263px;
+    }
+
+    .editionPay{
+        width: 443px;
+            height: 528px;
+    }
+
+    .editionPayBorder{
+        border-radius: 24px;
+        height: 100.3%;
+    }
+
+    .editionFreeBorder{
+        border-radius: 24px;
+        height: 100.6%;
+    }
+
+    .wDemoEdition{
+        width: 263px;
+    }
+
+    .editionText{
+        grid-template-columns: 263px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 992px) {
+    .editionContainer{
+        grid-template-columns: 543px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+
+        justify-content: center;
+    }
+
+    .edition{
+        display: grid;
+        grid-template-columns: 543px;
+        justify-content: end;
+    }
+
+    .editionFree{
+        width: 543px;
+        
+    }
+
+    .gStartedEdition{
+        width: 263px;
+    }
+
+    .editionPay{
+        width: 543px;
+    }
+
+    .editionPayBorder{
+        border-radius: 24px;
+        height: 100.3%;
+    }
+
+    .editionFreeBorder{
+        border-radius: 24px;
+        height: 100.6%;
+    }
+
+    .wDemoEdition{
+        width: 263px;
+    }
+
+    .editionText{
+        grid-template-columns: 263px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+@media (max-width:570px) {
+    .editionContainer{
+        grid-template-columns: 343px;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .edition{
+        grid-template-columns: 343px;
+    }
+
+    .editionFree{
+        width: 343px;
+        
+    }
+
+    .gStartedEdition{
+        width: 263px;
+    }
+
+    .editionPay{
+        width: 343px;
+    }
+
+    .editionPayBorder{
+        border-radius: 24px;
+        height: 100.3%;
+    }
+
+    .editionFreeBorder{
+        border-radius: 24px;
+        height: 100.6%;
+    }
+
+    .wDemoEdition{
+        width: 263px;
+    }
+
+    .editionText{
+        grid-template-columns: 263px;
+    }
+}
+
