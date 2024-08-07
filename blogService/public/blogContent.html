@@ -51,8 +51,8 @@
             
             <main>
                 
-                <div class="blogContainer">
-                    <div class="blur"></div>
+                <div class="blogContainer" id="blogContent">
+                    <!-- <div class="blur"></div>
 
                     <div class="container">
                         <div class="row margin66 justify-content-between">
@@ -153,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <div class="blur"></div> -->
+                    <div class="blur"></div> -->
                 </div>
                     
             </main>
@@ -281,6 +281,124 @@
         
             </footer>
         </div>
+
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const blogId = urlParams.get('id');
+        
+            if (blogId) {
+              fetch(`/api/blogs/${blogId}`)
+                .then(response => response.json())
+                .then(data => {
+                  const blogContent = document.getElementById('blogContent');
+                  const blog = data.blog;
+        
+                  const blogElement = document.createElement('div');
+                  blogElement.classList.add('blogContainer');
+                  blogElement.innerHTML = `
+                    <div class="blur"></div>
+                    <div class="container">
+                      <div class="row margin66 justify-content-between">
+                        <div class="col-xl-7 col-lg-6 col-md-6 col-auto">
+                          <div class="dataText">${blog.date}</div>
+                          <div class="blogNameText">${blog.title}</div>
+                          <div class="backgroundPicture">
+                            <div class="dataTextBack">${blog.date}</div>
+                            <div class="blogNameTextBack">${blog.title}</div>
+                          </div>
+                          <div style="padding-top: 35px;">
+                            <div class="row">
+                              <div class="col-auto">
+                                <label class="userBox" href="@"></label>
+                              </div>
+                              <div class="col-auto px-0">
+                                <div class="userNameText">${blog.author}</div>
+                                <div class="statusText">Director of People</div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <button class="bluButton">People</button>
+                            <button class="bluButton">Hiring</button>
+                          </div>
+                          <div class="shSocialText">Share on social</div>
+                          <div>
+                            <label class="socialBox" href="@"></label>
+                            <label class="socialBox" href="@"></label>
+                            <label class="socialBox" href="@"></label>
+                            <label class="socialBox" href="@"></label>
+                            <label class="socialBox" href="@"></label>
+                          </div>
+                          <div class="blogContentTextIntro">${blog.content}</div>
+                        </div>
+                        <div class="imgContainer col-xl-5 col-lg-6 col-md-6 d-md-block d-sm-none col-auto">
+                          <img class="imgBoxIntro img-fluid" src="${blog.imagion}" alt="" id="headerImage">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <div class="subtitleText">Lorem Ipsum Heading</div>
+                          <div class="blogContentText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt</div>
+                          <div class="row row-gap-3">
+                            <div class="col-md-6 text-center">
+                              <img class="imgBox img-fluid" src="${blog.imagion}">
+                            </div>
+                            <div class="col-md-6 text-center">
+                              <img class="imgBox img-fluid d-none d-md-block" src="img/pictur/Image.png">
+                            </div>
+                          </div>
+                          <div class="blogContentText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</div>
+                          <div class="subtitleText">Lorem Ipsum Heading</div>
+                          <div class="blogContentText">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</div>
+                        </div>
+                      </div>
+                    </div>
+                  `;
+        
+                  blogContent.appendChild(blogElement);
+        
+                  const img = document.getElementById("headerImage");
+                  img.onload = function() {
+                    var canvas = document.createElement("canvas");
+                    var ctx = canvas.getContext("2d");
+        
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+        
+                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        
+                    var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+                    var pixels = imageData.data;
+        
+                    var r = 0, g = 0, b = 0;
+                    for (var i = 0; i < pixels.length; i += 4) {
+                      r += pixels[i];
+                      g += pixels[i + 1];
+                      b += pixels[i + 2];
+                    }
+                    var numPixels = pixels.length / 4;
+                    var avgR = Math.round(r / numPixels);
+                    var avgG = Math.round(g / numPixels);
+                    var avgB = Math.round(b / numPixels);
+        
+                    var saturation = 30; 
+                    var blueSaturation = 50; 
+                    avgR = Math.max(avgR - saturation, 20);
+                    avgG = Math.min(avgG + saturation, 250); 
+                    avgB = Math.min(avgB + saturation + blueSaturation, 200); 
+        
+                    var gradientColor = "linear-gradient(180deg, rgba(" + avgR + ", " + avgG + ", " + avgB + ", 0.3) 0%, #111 100%)";
+                    document.querySelector(".blur").style.background = gradientColor;
+                  };
+                })
+                .catch(error => {
+                  console.error('Error fetching blog:', error);
+                  document.getElementById('blogContent').innerHTML = `<p>Failed to load blog content.</p>`;
+                });
+            } else {
+              document.getElementById('blogContent').innerHTML = `<p>No blog ID provided in URL.</p>`;
+            }
+          </script>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     

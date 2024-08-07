@@ -6,6 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel='stylesheet' href="css/style.css">
+    <link rel='stylesheet' href="css/blogContent/blogContent.css">
+
     <link rel='stylesheet' href="css/blog/blog.css">
 
 
@@ -16,6 +18,7 @@
 
     <script src="js/main.js"></script>
     <script src="js/resize.js"></script>
+
 </head>
 <body>
 
@@ -60,41 +63,8 @@
                             Our Featured Posts
                         </div>
                         
-                        <div class="col d-none d-sm-block">
-                            <div class="row align-items-center">
-                                
-                                <div class="col-xl-auto col-6">     
-                                    <a href="blogContent.html">                            
-                                        <div class="previewBox d-none d-sm-block" style="margin-bottom: 40px;" href="blogContent.html"></div>
-                                    </a> 
-                                </div> 
-        
-                                <div class="col-xl-auto col-6 ms-auto">
+                        <div class="col d-none d-sm-block" id="introBlogs">
                            
-                                        <div class="nameBlogTextMain">Dummy Text Used As The Heading Of a Blog </div> 
-                                    
-                                        <div class="descriptionBlogText ">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-                                            diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam. 
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam 
-                                            nonummy nibh euismod tincidunt ut laoreet.
-                                        </div>
-                                      
-                                        <div class="autorContainer paddiingNull order-0 order-sm-1">
-                                            <div class="autorIconIntro"></div>  
-                                            
-                                            <div>
-                                                <div class="col-lg-12 blogTitelPhone">Title</div>
-                                                <div class="col-lg-12 contentAutorBigText">Oliver Bennett</div>
-                                            </div>
-
-                                            <div class="dotIconIntro"></div>
-
-                                            <div class="contentAutorBigText ">18 Jan 2022</div>
-                                        </div>
-                    
-                                    
-                                </div>
-                            </div>
                         </div>
 
                         <div class="col-12 svgBild">
@@ -140,8 +110,8 @@
 
                     </div>
 
-                    <div class="row justify-content-xl-between introBlogContainer" id="allBlogs">
-                        <div class="col-sm-4 col-12 blogIntro paddiingNull d-flex flex-column flex-lg-column">
+                    <div class="row introBlogContainer filContainer justify-content-between" style="max-width: 1177px; " id="filteredBlogs">
+                        <!-- <div class="col-sm-4 col-12 blogIntro paddiingNull d-flex flex-column flex-lg-column">
                 
                             <a href="blogContent.html" class="introImage order-1 order-sm-0"></a>
                 
@@ -199,27 +169,27 @@
                 
                             <div class="blogLineal order-1 order-sm-0"></div>
                 
-                        </div>
+                        </div> -->
                 
                     </div>
-<!-- 
-                    <div class="row justify-content-xl-between introBlogContainer" id="filteredBlogs">
-                    </div> -->
 
                    
-                        <div class="row ongoingsContainerIntro">
-                            <div class="col-auto lsOngoingsText align-self-center">                
-                                    Latest Ongoings
-                            </div>  
-                            <div class="col-auto buttonMorePhone ms-auto">
-                                <svg width="8" height="13" viewBox="0 0 8 13" fill="#6c7275" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.37054L1.39309 0L8 6.5L1.39309 13L0 11.6295L5.21383 6.5L0 1.37054Z" fill="#6C7275" />
-                                  </svg>
-                            </div>                     
-                        </div>
+                    <div class="row ongoingsContainerIntro">
+                        <div class="col-auto lsOngoingsText align-self-center">                
+                                Latest Ongoings
+                        </div>  
+                        <div class="col-auto buttonMorePhone ms-auto">
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="#6c7275" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M0 1.37054L1.39309 0L8 6.5L1.39309 13L0 11.6295L5.21383 6.5L0 1.37054Z" fill="#6C7275" />
+                              </svg>
+                        </div>                     
+                    </div>
 
+                    <div class="row ongoingsContainer justify-content-between" style="max-width: 1177px; " id="allBlogs">
+                
+                    </div>
 
-                        <div class="row justify-content-xl-between ongoingsContainer"> 
+                        <!-- <div class="row justify-content-xl-between ongoingsContainer"> 
                             
                             <div class="col-4 paddiingNull blog d-flex flex-column flex-lg-column">
                    
@@ -379,7 +349,7 @@
 
                            
 
-                        </div>
+                        </div> -->
 
                         <div class="col-12 text-center">
                             <button class="buttonMore">Load More Blogs</button>
@@ -515,7 +485,7 @@
 
     <!-- </div> -->
 
-    <script>
+    <!-- <script>
  fetch('/api/blogs')
       .then(response => response.json())
       .then(data => {
@@ -544,15 +514,139 @@
           `;
           allBlogsContainer.appendChild(blogElement);
 
-          if ([4,1].includes(blog.id)) {
+          if ([2, 3].includes(blog.id)) {
             const filteredBlogElement = blogElement.cloneNode(true);
             filteredBlogsContainer.appendChild(filteredBlogElement);
           }
-
-
         });
       });
+      </script> -->
+      <script>
+        fetch('/api/blogs')
+          .then(response => response.json())
+          .then(data => {
+            const introBlogsContainer = document.getElementById('introBlogs');
+            
+            const introBlogs = data.blogs.filter(blog => [1].includes(blog.id));
+            
+            introBlogs.forEach(blog => {
+              const blogElement = document.createElement('div');
+              blogElement.className = 'row grid justify-content-between  align-items-center';
+      
+              blogElement.innerHTML = `       
+                    <div class="col ">     
+                        <a href="blogContent.html?id=${blog.id}">                          
+                           <img class="previewBox d-none d-sm-block" style="margin-bottom: 40px;" src="${blog.imagion}"/>
+                        </a> 
+                    </div>     
+                       
+                    <div class="col " style="max-width: 570px;">   
+                        <a href="blogContent.html?id=${blog.id}" class="nameBlogTextMain">${blog.title} </a>             
+                        <a href="blogContent.html?id=${blog.id}" class="descriptionBlogText ">${blog.content}</a>
+                                      
+                        <div class="autorContainer paddiingNull order-0 order-sm-1">
+                            <div class="autorIconIntro">${blog.authorAvatar}</div>  
+                                            
+                            <div>
+                                <div class="col-lg-12 blogTitelPhone">${blog.title}</div>
+                                <div class="col-lg-12 contentAutorBigText">${blog.author}</div>
+                            </div>
+
+                            <div class="dotIconIntro"></div>
+
+                            <div class="contentAutorBigText ">${blog.date}</div>
+                        </div>
+                    </div>
+              `;
+              introBlogsContainer.appendChild(blogElement);
+            });
+          });
       </script>
+
+
+      <script>
+        fetch('/api/blogs')
+          .then(response => response.json())
+          .then(data => {
+            const filteredBlogsContainer = document.getElementById('filteredBlogs');
+            
+            const filteredBlogs = data.blogs.filter(blog => [4, 2, 5].includes(blog.id));
+            
+            filteredBlogs.forEach(blog => {
+              const blogElement = document.createElement('div');
+              blogElement.className = 'blogIntro col-sm-6 col-md-4 card-container paddiingNul2 ';
+      
+              blogElement.innerHTML = `       
+
+                    <div class="card " style="background-color: rgba(255, 255, 255, 0);">                    
+                        <a href="blogContent.html?id=${blog.id}" class="order-3 order-sm-0">
+                            <div>
+                                <img class="card-img-top filImg introImage" src="${blog.imagion}"/>
+                            </div>
+                        </a>
+                        <div class="autorContainer card-body paddiingNul align-items-center order-1 order-sm-0">
+                            <div class="autorIcon"><img src="${blog.authorAvatar}" /></div>
+                            <div>
+                                <div class="col-lg-12 blogTitelPhone">${blog.title}</div>
+                                <a class="col-lg-12 contentAutorSmallText">${blog.author}</a>
+                            </div>
+                            <div class="dotIcon"></div>
+                            <div class="contentAutorSmallText dataMargAuto">${blog.date}</div>
+                        </div>
+                        <a href="blogContent.html?id=${blog.id}" class="blogText paddiingNul order-2 order-sm-1 d-flex">${blog.content}</a>
+                        <div class="blogLineal order-3 order-sm-0"></div>
+                    </div>
+
+
+              `;
+              filteredBlogsContainer.appendChild(blogElement);
+            });
+          });
+      </script>
+
+<script>
+    fetch('/api/blogs')
+        .then(response => response.json())
+        .then(data => {
+            console.log('Fetched data:', data);
+
+            if (!data.blogs) {
+                console.error('No blogs found in the response.');
+                return;
+            }
+
+            const allBlogsContainer = document.getElementById('allBlogs');
+            data.blogs.forEach(blog => {
+                const blogElement = document.createElement('div');
+                blogElement.className = 'col-sm-6 col-md-4 card-container blog paddiingNul2';
+
+                blogElement.innerHTML = `
+                    <div class="card " style="background-color: rgba(255, 255, 255, 0);">                    
+                        <a href="blogContent.html?id=${blog.id}" >
+                         
+                                <img class="blogImg card-img-top" src="${blog.imagion}"/>
+                            
+                        </a>
+                                           
+                        <div class="paddiingNul autorContainer card-body align-items-center order-1 order-sm-0">
+                            <div class="autorIcon d-none d-sm-block"><img src="${blog.authorAvatar}" /></div>
+                            <div>
+                                <div class="contentAutorSmallText">${blog.author}</div>
+                            </div>
+                            <div class="dotIcon"></div>
+                            <div class="contentAutorSmallText d-none d-sm-block">${blog.date}</div>
+                        </div>
+                        <a href="blogContent.html?id=${blog.id}" class="paddiingNul blogTextOngoing card-body order-0 order-sm-1">${blog.content}</a>
+                    </div>
+                `;
+                allBlogsContainer.appendChild(blogElement);
+            });
+        })
+        .catch(error => {
+            console.error('Error fetching blogs:', error);
+        });
+</script>
+      
       
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

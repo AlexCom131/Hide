@@ -1,8 +1,19 @@
 const express = require('express');
-const app = express();
+const path = require('path');
+const sqlite3 = require('sqlite3').verbose();
 const blogsRouter = require('./routes/blogs');
 
-app.use('/api/blogs', blogsRouter);
+const dbPath = path.resolve(__dirname, 'blogDatabase.db');
+const db = new sqlite3.Database(dbPath, (err) => {
+  if (err) {
+    console.error('Could not connect to database', err);
+  } else {
+    console.log('Connected to database');
+  }
+});
+
+const app = express();
+app.use('/api/blogs', blogsRouter(db)); 
 
 app.use(express.static('public'));
 
@@ -14,4 +25,5 @@ const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
+
 

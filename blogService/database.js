@@ -1,25 +1,44 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database(':memory:'); // Використовуємо в пам'яті для простоти, можна змінити на файл
+const path = require('path');
+const dbPath = path.resolve(__dirname, 'blogDatabase.db'); 
 
+const db = new sqlite3.Database(dbPath, (err) => {
+    if (err) {
+      console.error('Could not connect to database', err);
+    } else {
+      console.log('Connected to database');
+    }
+    });
 db.serialize(() => {
   db.run(`CREATE TABLE blogs (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
+    imagion TEXT,
     author TEXT,
     authorAvatar TEXT,
     date TEXT,
     content TEXT
   )`);
 
-  // Додавання тестових даних
-  const stmt = db.prepare("INSERT INTO blogs (title, author, authorAvatar, date, content) VALUES (?, ?, ?, ?, ?)");
-  stmt.run("Blog Title 1", "Oliver Bennett1", "/path/to/avatar1.jpg", "18 Jan 2022", "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog");
-  stmt.run("Blog Title 2", "Щдуп Bennett2", "/path/to/avatar2.jpg", "18 Jan 2022", "Another Dummy Text For Blog Heading");
-  stmt.run("Blog Title 3", "Oliver іваів3", "/path/to/avatar3.jpg", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
-  stmt.run("Blog Title 4", "Oliver іваів4", "/path/to/avatar3.jpg", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
-  stmt.run("Blog Title 5", "Bogdan іваів5", "/path/to/avatar3.jpg", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
+  const stmt = db.prepare("INSERT INTO blogs (title, imagion, author, authorAvatar, date, content) VALUES (?,?, ?, ?, ?, ?)");
+  stmt.run("Blog Title 1", "/img/pictur/Blog Image.png", "Oliver Bennett1", "/img/logoClients/1Logo.png", "18 Jan 2022", "Lorem Ipsum Is a Dummy Text Used As The Heading Of a Blog");
+  stmt.run("Blog Title 2", "/img/pictur/Blog Image.png", "Щдуп Bennett2", "/img/logoClients/1Logo.png", "18 Jan 2022", "Another Dummy Text For Blog Heading");
+  stmt.run("Blog Title 3", "/img/pictur/Group 48095419.png", "Oliver іваів3", "/img/logoClients/1Logo.png", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
+  stmt.run("Blog Title 4", "/img/pictur/Blog Image1.png", "Oliver іваів4", "/img/logoClients/1Logo.png", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
+  stmt.run("Blog Title 5", "/img/pictur/Image.png", "Bogdan іваів5", "/img/logoClients/1Logo.png", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
+  stmt.run("Blog Title 6", "/img/pictur/Group 48095419.png", "Bogdan іваів6", "/img/logoClients/1Logo.png", "18 Jan 2022", "Yet Another Dummy Text For Blog Heading");
 
-  stmt.finalize();
+
+  stmt.finalize(() => {
+    console.log("Initial data has been inserted into the database");
+    db.close((err) => {
+      if (err) {
+        console.error('Could not close the database connection', err);
+      } else {
+        console.log('Database connection closed');
+      }
+    });
+  });
 });
 
 module.exports = db;
