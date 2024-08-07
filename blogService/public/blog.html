@@ -545,7 +545,8 @@
                         <a href="blogContent.html?id=${blog.id}" class="descriptionBlogText ">${blog.content}</a>
                                       
                         <div class="autorContainer paddiingNull order-0 order-sm-1">
-                            <div class="autorIconIntro">${blog.authorAvatar}</div>  
+                            <img class="autorIconIntro" src="${blog.authorAvatar}"/>  
+                            
                                             
                             <div>
                                 <div class="col-lg-12 blogTitelPhone">${blog.title}</div>
@@ -585,7 +586,7 @@
                             </div>
                         </a>
                         <div class="autorContainer card-body paddiingNul align-items-center order-1 order-sm-0">
-                            <div class="autorIcon"><img src="${blog.authorAvatar}" /></div>
+                            <div class="autorIcon"><img class="autorIcon" src="${blog.authorAvatar}" /></div>
                             <div>
                                 <div class="col-lg-12 blogTitelPhone">${blog.title}</div>
                                 <a class="col-lg-12 contentAutorSmallText">${blog.author}</a>
@@ -629,7 +630,7 @@
                         </a>
                                            
                         <div class="paddiingNul autorContainer card-body align-items-center order-1 order-sm-0">
-                            <div class="autorIcon d-none d-sm-block"><img src="${blog.authorAvatar}" /></div>
+                            <div class="autorIcon d-none d-sm-block"><img class="autorIcon" src="${blog.authorAvatar}" /></div>
                             <div>
                                 <div class="contentAutorSmallText">${blog.author}</div>
                             </div>
